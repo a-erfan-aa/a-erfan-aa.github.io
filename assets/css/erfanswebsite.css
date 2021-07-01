@@ -29,6 +29,10 @@ table, th, td {
 	border-collapse: collapse;
 }
 
+table {
+	width: 100%;
+}
+
 a {
 	color: white;
 	text-decoration: none;
