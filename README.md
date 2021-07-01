@@ -1,4 +1,4 @@
 # a-erfan-aa.github.io
 my personal website, yeehaw
 
-qwertyuiop[
+Ok so hol up im still tweaking things a lil bit here and there and i haven't got my domain yet, but i hope to within a week since updating this readme.md
