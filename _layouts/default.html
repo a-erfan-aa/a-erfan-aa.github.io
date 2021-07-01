@@ -1,0 +1,44 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>erfan's website</title>
+	<link rel="stylesheet" href="/assets/css/erfanswebsite.css">
+</head>
+<body>
+
+<br><br>
+
+<!-- banner sorta top of the page-->
+<div>
+	<h1 class="center"><u>Hi, i'm erfan and this is my website!</u></h1>
+	<h3 class="center">Have a look around if you'd like, please don't break anything while you're here</h3>
+</div>
+
+<br><br>
+<hr>
+<br>
+
+<!-- navbar sorta places to click to-->
+{% include navbar.html %}
+
+<br>
+<hr>
+<br><br>
+
+<!-- content -->
+{{ content }}
+
+<br><br>
+<hr>
+
+<!-- footer -->
+<div>
+	<p>This page was first pushed: {{ page.firstCreated }}</p>
+	<p>This page was last &nbsp;pushed: {{ page.lastChanged }}</p>
+</div>
+</body>
+</html>

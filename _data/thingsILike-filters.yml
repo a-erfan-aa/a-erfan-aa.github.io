@@ -1,0 +1,13 @@
+- name: boardgame
+- name: videogame
+
+- name: movie
+- name: series
+- name: youtube
+
+- name: music
+- name: album
+- name: podcast
+
+- name: book
+- name: website

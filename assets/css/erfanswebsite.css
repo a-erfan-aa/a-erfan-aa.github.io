@@ -1,0 +1,43 @@
+/* aite now how do i work this thing */
+
+/* the globalish stuff i guess? gosh i dont know the right words to refer to things*/
+* {
+	font-family: "Courier New";
+	margin-top: 0px;
+	margin-bottom: 0px;
+	line-height: 1.4;
+}
+
+body {
+	background-color: black;
+}
+
+nav, h1, h2, h3, h4, h5, h6, p, ul, label {
+	color: #008ae6;
+	/*margin-top: 0px;
+	margin-bottom: 0px;*/
+}
+
+nav {
+	text-indent: 0px;
+	text-align: center;
+}
+
+table, th, td {
+	color: #008ae6;
+	border: 1px solid #008ae6;
+	border-collapse: collapse;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.center {
+	text-align: center;
+}
