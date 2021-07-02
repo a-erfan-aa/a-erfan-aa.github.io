@@ -18,6 +18,10 @@ nav, h1, h2, h3, h4, h5, h6, p, ul, label {
 	margin-bottom: 0px;*/
 }
 
+h2, h43 {
+	text-align: center;
+}
+
 nav {
 	text-indent: 0px;
 	text-align: center;
@@ -40,8 +44,4 @@ a {
 
 a:hover {
 	text-decoration: underline;
-}
-
-.center {
-	text-align: center;
 }
