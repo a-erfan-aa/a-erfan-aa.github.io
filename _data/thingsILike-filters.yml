@@ -6,8 +6,9 @@
 - name: youtube
 
 - name: music
-- name: remix
 - name: album
+- name: remix
+- name: mashup
 - name: podcast
 
 - name: book
