@@ -2,7 +2,7 @@
 
 /* the globalish stuff i guess? gosh i dont know the right words to refer to things*/
 * {
-	font-family: "Courier New";
+	font-family: Consolas, "Courier New";
 	margin-top: 0px;
 	margin-bottom: 0px;
 	line-height: 1.4;
