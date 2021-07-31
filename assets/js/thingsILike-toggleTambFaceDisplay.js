@@ -3,11 +3,11 @@
 function toggleTambFaceDisp() {
 	var tambFaceToggle = document.getElementById("tambFaceToggle");
 	var tambFace = document.getElementById("tambFace");
-	if (tambFaceToggle.innerHTML === "Tambourine face album hehaheehee (show)") {
-		tambFaceToggle.innerHTML = "Tambourine face album hehaheehee (hide)";
+	if (tambFaceToggle.innerHTML === "show") {
+		tambFaceToggle.innerHTML = "hide";
 		tambFace.style.display = "";
 	} else {
-		tambFaceToggle.innerHTML = "Tambourine face album hehaheehee (show)";
+		tambFaceToggle.innerHTML = "show";
 		tambFace.style.display = "none";
 	}
 }
