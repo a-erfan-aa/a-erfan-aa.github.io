@@ -108,57 +108,48 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 
 <!-- sort columns in table wikipedia style
 I'll get on this in the future if i decide that i need it, like if i add another column to the table or something -->	
-<script>
-	//function sortTable()
-</script>	
+<script>//function sortTable()</script>	
 
 <br>
 
 <div><!-- section title and content -->
 	<h3>The big list of things [<a href="javascript:void(0)" id="filterToggle" onclick="toggleFilterDisp()">click/tap to hide filters</a>]</h3>
 	<p>The filters are just broad strokes, for example you can both play things and read things on a website. I just have them because i hope to keep this list growing and having a filter's gonna help.</p>
-		<div id="filters"><!-- filters -->
-			<!-- a bunch of checkboxes
-			they start all unticked, showing all-->
-			<ul>
-				<li>Media</li>
-					<ul>
-						<li>Playable:</li>
-							<ul>
-								<li>Boardgames: <input type="checkbox" id="boardgame" onclick="filterTable()"></li>
-								<li>Videogames: <input type="checkbox" id="videogame" onclick="filterTable()"></li>
-							</ul>
-						<li>Watchable:</li>
-							<ul>
-								<li>Movies: <input type="checkbox" id="movie" onclick="filterTable()"></li>
-								<li>Series: <input type="checkbox" id="series" onclick="filterTable()"></li>
-								<li>youtube: <input type="checkbox" id="youtube" onclick="filterTable()"></li>
-							</ul>
-						<li>Listenable:</li>
-							<ul>
-								<li>Music: <input type="checkbox" id="music" onclick="filterTable()"></li>
-									<ul>
-										<li>Albums: <input type="checkbox" id="album" onclick="filterTable()"></li>
-										<li>Remixes: <input type="checkbox" id="remix" onclick="filterTable()"></li>
-										<li>Mashups: <input type="checkbox" id="mashup" onclick="filterTable()"></li>
-									</ul>
-								<li>Podcasts: <input type="checkbox" id="podcast" onclick="filterTable()"></li>
-							</ul>
-						<li>Readable: </li>
-							<ul>
-								<li>Books: <input type="checkbox" id="book" onclick="filterTable()"></li>
-								<li>Websites: <input type="checkbox" id="website" onclick="filterTable()"></li>
-							</ul>
-					</ul>
-				<li>Not media</li>
-					<ul>
-						<li>Software: <input type="checkbox" id="software" onclick="filterTable()"></li>
-							<ul>
-								<li>Free software: <input type="checkbox" id="freeSoftware" onclick="filterTable()"></li>
-							</ul>
-					</ul>
-			</ul>
-		</div>
+	
+	<!-- filters
+	a bunch of checkboxes that all start unticked, showing all -->
+	<div id="filters">
+		<ul>
+			<li>Media</li>
+				<ul>
+					<li>Playable:</li>
+						<ul>
+							<li>Boardgames: <input type="checkbox" id="boardgame" onclick="filterTable()"></li>
+							<li>Videogames: <input type="checkbox" id="videogame" onclick="filterTable()"></li>
+						</ul>
+					<li>Watchable:</li>
+						<ul>
+							<li>Movies: <input type="checkbox" id="movie" onclick="filterTable()"></li>
+							<li>Series: <input type="checkbox" id="series" onclick="filterTable()"></li>
+							<li>youtube: <input type="checkbox" id="youtube" onclick="filterTable()"></li>
+						</ul>
+					<li>Listenable:</li>
+						<ul>
+							<li>Music: <input type="checkbox" id="music" onclick="filterTable()"></li>
+								<ul>
+									<li>Albums: <input type="checkbox" id="album" onclick="filterTable()"></li>
+									<li>Remixes: <input type="checkbox" id="remix" onclick="filterTable()"></li>
+									<li>Mashups: <input type="checkbox" id="mashup" onclick="filterTable()"></li>
+								</ul>
+							<li>Podcasts: <input type="checkbox" id="podcast" onclick="filterTable()"></li>
+						</ul>
+					<li>Readable: </li>
+						<ul>
+							<li>Books: <input type="checkbox" id="book" onclick="filterTable()"></li>
+							<li>Websites: <input type="checkbox" id="website" onclick="filterTable()"></li>
+						</ul>
+				</ul>
+			<li>Not media</li>
 				<ul>
 					<li>Software: <input type="checkbox" id="software" onclick="filterTable()"></li>
 						<ul>
