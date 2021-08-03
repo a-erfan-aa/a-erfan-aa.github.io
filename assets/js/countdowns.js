@@ -20,7 +20,7 @@ var x = setInterval(function() {
 	var seconds{{ item.name }} = Math.floor((distance{{ item.name }} % (1000 * 60)) / 1000);{% endfor %}
 
 	// Display the result in the element with whatever id {% for item in site.data.countdowns %}
-	document.getElementById("{{ item.id }}").innerHTML = "in " + days{{ item.name }} + "d " + hours{{ item.name }} + "h " + minutes{{ item.name }} + "m " + seconds{{ item.name }} + "s";{% endfor %}
+	document.getElementById("{{ item.id }}").innerHTML = "in " + days{{ item.name }} + " days, " + hours{{ item.name }} + " hours, " + minutes{{ item.name }} + " minutes and " + seconds{{ item.name }} + " seconds";{% endfor %}
 
 	// If a count down is finished, write some text {% for item in site.data.countdowns %}
 	if (distance{{ item.name}} < 0) {
