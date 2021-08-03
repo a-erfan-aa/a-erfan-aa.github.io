@@ -23,7 +23,5 @@ var x = setInterval(function() {
 	document.getElementById("{{ item.id }}").innerHTML = "in " + days{{ item.name }} + " days, " + hours{{ item.name }} + " hours, " + minutes{{ item.name }} + " minutes and " + seconds{{ item.name }} + " seconds";{% endfor %}
 
 	// If a count down is finished, write some text {% for item in site.data.countdowns %}
-	if (distance{{ item.name}} < 0) {
-		document.getElementById("{{ item.id }}").innerHTML = "any moment now!";
-	}{% endfor %}
+	if (distance{{ item.name}} < 0) { document.getElementById("{{ item.id }}").innerHTML = "any moment now!"; }{% endfor %}
 }, 1000);
