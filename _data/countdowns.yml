@@ -1,0 +1,11 @@
+# - name: Example
+#   id: demo
+#   date: "2021-08-08"
+
+- name: Vibe
+  id: vibe
+  date: "2021-08-08"
+  
+- name: EOtE
+  id: eote
+  date: "2021-09-28"
