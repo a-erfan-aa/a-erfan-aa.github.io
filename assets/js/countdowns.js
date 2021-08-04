@@ -1,7 +1,6 @@
 ---
 ---
-//ripped and adapted from https://www.w3schools.com/howto/howto_js_countdown.asp
-{% for item in site.data.countdowns %}
+//ripped and adapted from https://www.w3schools.com/howto/howto_js_countdown.asp {% for item in site.data.countdowns %}
 var countDownDate{{ item.name }} = new Date("{{ item.date }}").getTime();{% endfor %}
 
 // Update the count downs every 1 second
