@@ -1,21 +1,21 @@
 # media
-# playable
+## playable
 - name: boardgame
 - name: videogame
 
-# watchable
+## watchable
 - name: movie
 - name: series
 - name: youtube
 
-# listenable
+## listenable
 - name: music
 - name: album
 - name: remix
 - name: mashup
 - name: podcast
 
-# readable
+## readable
 - name: book
 - name: website
 
