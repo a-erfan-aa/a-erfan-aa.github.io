@@ -18,9 +18,20 @@ var x = setInterval(function() {
 	var hours{{ item.name }} = Math.floor((distance{{ item.name }} % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 	var minutes{{ item.name }} = Math.floor((distance{{ item.name }} % (1000 * 60 * 60)) / (1000 * 60));
 	var seconds{{ item.name }} = Math.floor((distance{{ item.name }} % (1000 * 60)) / 1000);{% endfor %}
-
+	
+	// Set time unit nouns to plural or singular {% for item in site.data.countdowns %}
+	var days{{ item.name }}Noun = " days, ";
+	var hours{{ item.name }}Noun = " hours, ";
+	var minutes{{ item.name }}Noun = " minutes and ";
+	var seconds{{ item.name }}Noun = " seconds";{% endfor %}
+	{% for item in site.data.countdowns %}
+	if (days{{ item.name }} == 1) { days{{ item.name }}Noun = " day, "; }
+	if (hours{{ item.name }} == 1) { hours{{ item.name }}Noun = " hour, "; }
+	if (minutes{{ item.name }} == 1) { minutes{{ item.name }}Noun = " minute and "; }
+	if (seconds{{ item.name }} == 1) { seconds{{ item.name }}Noun = " second"; }{% endfor %}
+	
 	// Display the result in the element with whatever id {% for item in site.data.countdowns %}
-	document.getElementById("{{ item.id }}").innerHTML = "in " + days{{ item.name }} + " days, " + hours{{ item.name }} + " hours, " + minutes{{ item.name }} + " minutes and " + seconds{{ item.name }} + " seconds";{% endfor %}
+	document.getElementById("{{ item.id }}").innerHTML = "in " + days{{ item.name }} + days{{ item.name }}Noun + hours{{ item.name }} + hours{{ item.name }}Noun + minutes{{ item.name }} + minutes{{ item.name }}Noun + seconds{{ item.name }} + seconds{{ item.name }}Noun;{% endfor %}
 
 	// If a count down is finished, write some text {% for item in site.data.countdowns %}
 	if (distance{{ item.name}} < 0) { document.getElementById("{{ item.id }}").innerHTML = "any moment now!"; }{% endfor %}
