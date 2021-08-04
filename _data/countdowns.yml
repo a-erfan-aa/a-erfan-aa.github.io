@@ -1,11 +1,14 @@
+# description for humans to read
 # - name: Example
 #   id: demo
-#   date: "2021-08-08"
+#   date: "2021-08-21"
 
+# aerron's single vibe
 - name: Vibe
   id: vibe
   date: "2021-08-08"
-  
+
+# echoes of the eye, dlc for outer wilds
 - name: EOtE
   id: eote
   date: "2021-09-28"
