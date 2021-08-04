@@ -1,18 +1,24 @@
+# media
+# playable
 - name: boardgame
 - name: videogame
 
+# watchable
 - name: movie
 - name: series
 - name: youtube
 
+# listenable
 - name: music
 - name: album
 - name: remix
 - name: mashup
 - name: podcast
 
+# readable
 - name: book
 - name: website
 
+# not media
 - name: software
 - name: freeSoftware
