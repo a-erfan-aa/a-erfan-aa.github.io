@@ -5,11 +5,6 @@
 #   date: "YYYY-MM-DD" or date: "YYYY-MM-DDTHH:MM:SSZ" or date: "YYYY-MM-DDTHH:MM:SS+HH:MM" or date: "YYYY-MM-DDTHH:MM:SS-HH:MM"
 #   date: "2021-08-21" or date: "2021-08-21T12:00:00Z" or date: "2021-08-21T12:00:00+08:00"
 
-# aerron's single vibe
-- name: Vibe
-  id: vibe
-  date: "2021-08-08T00:00:00+08:00"
-
 # echoes of the eye, dlc for outer wilds
 - name: EOtE
   id: eote
