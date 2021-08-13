@@ -1,4 +1,4 @@
-//highly ripped from w3school's tutorial on stuff
+// highly ripped from w3school's tutorial on stuff, https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
 function toggleFilterDisp() {
 	var fToggle = document.getElementById("filterToggle");
