@@ -4,6 +4,19 @@ title: Things i like
 firstCreated: 2021/07/10
 lastChanged: 2021/09/01
 ---
+<!--
+a couple scripts so filtering through the big list is easier
+huge huge thanks to w3schools because the js code is easy to understand, copy and tweak to my needs
+afaik this is free js since it's readable and it doesn't collect data unannounced
+and if i were a user that's all i'd like out of the scripts my browser wants me to run
+-->
+
+<!-- hide and show filters, stole this from w3schools -->
+<script src="/assets/js/showhide.js"></script>
+
+<!-- filter through showing/hiding table rows -->
+<script src="/assets/js/thingsILike-filterTable.js"></script>
+
 <!-- title and subtitle-->
 <div>
 	<h2><u>You're now reading: the things that i like!</u></h2>
@@ -64,8 +77,7 @@ lastChanged: 2021/09/01
 					<li><a href="https://www.jongomm.com/">Jon Gomm</a>'s 2011 single Passionflower (<a href="https://www.youtube.com/watch?v=nY7GnAq6Znw"><span style="color: #FF0000;">youtube</span></a>|<a href="https://open.spotify.com/album/0qnEGgQh1D4qz4hfwvKieW"><span style="color: #1DB954;">spotify</span></a>|<a href="https://jongomm.bandcamp.com/track/passionflower"><span style="color: #629AA9">bandcamp</span></a>)</li>
 					<li><a href="https://en.wikipedia.org/wiki/Neutral_Milk_Hotel">Neutral Milk Hotel</a>'s 1998 album <a href="https://en.wikipedia.org/wiki/In_the_Aeroplane_Over_the_Sea">In the Aeroplane Over the Sea</a> (<a href="https://www.youtube.com/watch?v=jsM7XS-2X50&list=OLAK5uy_mcmpW2ioM2y1kninR5RNG2a_nCfz-AXfY&index=2"><span style="color: #FF0000;">youtube</span></a>|<a href="https://open.spotify.com/album/5COXoP5kj2DWfCDg0vxi4F"><span style="color: #1DB954;">spotify</span></a>|<a href="https://neutralmilkhotel.bandcamp.com/album/in-the-aeroplane-over-the-sea"><span style="color: #629AA9">bandcamp</span></a>)
 						<ul>
-							<script src="/assets/js/thingsILike-toggleTambFaceDisplay.js"></script>
-							<li>Tambourine face album hehaheehee [<a href="javascript:void(0)" id="tambFaceToggle" onclick="toggleTambFaceDisp()">show</a>]</li>
+							<li>Tambourine face album hehaheehee [<a href="javascript:void(0)" id="tambFaceToggle" onclick="showhide('tambFaceToggle', 'tambFace', 'show', 'hide')">show</a>]</li>
 							<img src="/things-i-like/images/realSearchResult.png" id="tambFace" style="width:90%;height:90%;display:none;" >
 						</ul>
 					</li>
@@ -107,30 +119,11 @@ lastChanged: 2021/09/01
 		</ul>
 </div>
 
-<!--
-a couple scripts so filtering through the big list is easier
-huge huge thanks to w3schools because the js code is easy to understand, copy and tweak to my needs
-afaik this is free js since it's readable and it doesn't collect data unannounced
-and if i were a user that's all i'd like out of the scripts my browser wants me to run
--->
-
-<!-- hide and show filters, stole this from w3schools -->
-<script src="/assets/js/thingsILike-toggleFilterDisplay.js"></script>
-
-<!-- filter through showing/hiding table rows -->
-<script src="/assets/js/thingsILike-filterTable.js"></script>
-
-<!--
-sort columns in table wikipedia style
-I'll get on this in the future if i decide that i need it, like if i add another column to the table or something
--->
-<script>//function sortTable()</script>	
-
 <br>
 
 <!-- the BIG list -->
 <div>
-	<h3>The big list of things [<a href="javascript:void(0)" id="filterToggle" onclick="toggleFilterDisp()">click/tap to hide filters</a>]</h3>
+	<h3>The big list of things [<a href="javascript:void(0)" id="filterToggle" onclick="showhide('filterToggle', 'filters', 'click/tap to show filters', 'click/tap to hide filters')">click/tap to hide filters</a>]</h3>
 	<p>The filters are just broad strokes, for example you can both play things and read things on a website. I just have them because i hope to keep this list growing and having a filter's gonna help.</p>
 	
 	<!--
