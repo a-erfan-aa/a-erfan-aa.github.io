@@ -5,7 +5,17 @@
 #   date: "YYYY-MM-DD" or date: "YYYY-MM-DDTHH:MM:SSZ" or date: "YYYY-MM-DDTHH:MM:SS+HH:MM" or date: "YYYY-MM-DDTHH:MM:SS-HH:MM"
 #   date: "2021-08-21" or date: "2021-08-21T12:00:00Z" or date: "2021-08-21T12:00:00+08:00"
 
+# 21st september, the date
+- name: 21stSeptember
+  id  : 0921
+  date: "2021-09-21T00:00:00+08:00"
+
 # echoes of the eye, dlc for outer wilds
 - name: EOtE
   id  : eote
   date: "2021-09-28T00:00:00Z"
+
+# Voyage, ABBA's upcoming album
+- name: Voyage
+  id  : voyage
+  date: "2021-11-05"
