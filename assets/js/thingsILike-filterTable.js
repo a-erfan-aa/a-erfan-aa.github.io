@@ -1,5 +1,8 @@
 ---
 ---
+/*
+This file was built with jekyll. no way i typed in all of this by hand.
+*/
 function filterTable() {
 	// vars
 	var checkedCount = 0;
