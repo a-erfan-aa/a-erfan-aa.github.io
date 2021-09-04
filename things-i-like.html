@@ -123,59 +123,108 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 
 <!-- the BIG list -->
 <div>
-	<h3>The big list of things [<a href="javascript:void(0)" id="filterToggle" onclick="showhide('filterToggle', 'filters', 'click/tap to show filters', 'click/tap to hide filters')">click/tap to hide filters</a>]</h3>
-	<p>The filters are just broad strokes, for example you can both play things and read things on a website. I just have them because i hope to keep this list growing and having a filter's gonna help.</p>
+	<h3>The big list of things [<a href="javascript:void(0)" id="filterToggle" onclick="showhide('filterToggle', 'filters', 'click/tap to show filters', 'click/tap to hide filters')">click/tap to show filters</a>]</h3>
 	
 	<!--
-	filters
-	a bunch of checkboxes that all start unticked, showing all
+		filters
+		a bunch of checkboxes that all start unticked, showing all
 	-->
-	<ul id="filters">
-		<li>Media:
-			<ul>
-				<li>Playable:
-					<ul>
-						<li>Boardgames: <input type="checkbox" id="boardgame" onclick="filterTable()"></li>
-						<li>Videogames: <input type="checkbox" id="videogame" onclick="filterTable()"></li>
-					</ul>
-				</li>
-				<li>Watchable:
-					<ul>
-						<li>Movies&nbsp;: 	<input type="checkbox" id="movie" onclick="filterTable()"></li>
-						<li>Series&nbsp;: 	<input type="checkbox" id="series" onclick="filterTable()"></li>
-						<li>youtube: 		<input type="checkbox" id="youtube" onclick="filterTable()"></li>
-					</ul>
-				</li>
-				<li>Listenable:
-					<ul>
-						<li>Music: <input type="checkbox" id="music" onclick="filterTable()">
-							<ul>
-								<li>Albums&nbsp;: 	<input type="checkbox" id="album" onclick="filterTable()"></li>
-								<li>Remixes: 		<input type="checkbox" id="remix" onclick="filterTable()"></li>
-								<li>Mashups: 		<input type="checkbox" id="mashup" onclick="filterTable()"></li>
-							</ul>
-						</li>
-						<li>Podcasts: <input type="checkbox" id="podcast" onclick="filterTable()"></li>
-					</ul>
-				</li>
-				<li>Readable:
-					<ul>
-						<li>Books&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="book" onclick="filterTable()"></li>
-						<li>Websites: 					<input type="checkbox" id="website" onclick="filterTable()"></li>
-					</ul>
-				</li>
-			</ul>
-		</li>
-		<li>Not media:
-			<ul>
-				<li>Software: <input type="checkbox" id="software" onclick="filterTable()">
-					<ul>
-						<li>Free software: <input type="checkbox" id="freeSoftware" onclick="filterTable()"></li>
-					</ul>
-				</li>
-			</ul>
-		</li>
-	</ul>
+	<div id="filters" style="display: none; border: 1px solid #008ae6; border-collapse: collapse;">
+		<p>The filters are just broad strokes, for example you can both play things and read things on a website, and music genres are just a mess sometimes. I have them mostly because i hope to keep this list growing and having a filter's gonna help.</p>
+		<p style="text-indent: 50px;">If any checkboxes are ticked, only stuff matching the checkboxes are shown. Clicking/tapping on any tags instead of chekcboxes in the filters list takes you to another page talkin bout why i like the niche/subgenre.</p>
+		<ul>
+			<li>Media [<a href="javascript:void(0)" id="mediaToggle" onclick="showhide('mediaToggle', 'mediaToggled', 'show', 'hide')">show</a>]:
+				<ul id="mediaToggled" style="display: none;">
+					<li>Playable [<a href="javascript:void(0)" id="playableToggle" onclick="showhide('playableToggle', 'playableToggled', 'show', 'hide')">show</a>]:
+						<ul id="playableToggled" style="display: none;">
+							<li>Boardgames: <input type="checkbox" id="boardgame" onclick="filterTable()"></li>
+							<li>Videogames: <input type="checkbox" id="videogame" onclick="filterTable()"></li>
+							<li>Players [<a href="javascript:void(0)" id="playersToggle" onclick="showhide('playersToggle', 'playersToggled', 'show', 'hide')">show</a>]:
+								<ul id="playersToggled" style="display: none;">
+									<li>playercount [<a href="javascript:void(0)" id="playercountToggle" onclick="showhide('playercountToggle', 'playercountToggled', 'show', 'hide')">show</a>]:
+										<ul id="playercountToggled" style="display: none;">
+											<li>1: <input type="checkbox" id="" onclick="filterTable()"></li>
+											<li>2: <input type="checkbox" id="" onclick="filterTable()"></li>
+											<li>3-4: <input type="checkbox" id="" onclick="filterTable()"></li>
+											<li>4++: <input type="checkbox" id="" onclick="filterTable()"></li>
+										</ul>
+									</li>
+									<li>player alignment [<a href="javascript:void(0)" id="playerAlignmentToggle" onclick="showhide('playerAlignmentToggle', 'playerAlignmentToggled', 'show', 'hide')">show</a>]:
+										<ul id="playerAlignmentToggled" style="display: none;">
+											<li>coop: <input type="checkbox" id="" onclick="filterTable()"></li>
+											<li>teambased: <input type="checkbox" id="" onclick="filterTable()"></li>
+											<li>ffa: <input type="checkbox" id="" onclick="filterTable()"></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>turn resolution [<a href="javascript:void(0)" id="turnResToggle" onclick="showhide('turnResToggle', 'turnResToggled', 'show', 'hide')">show</a>]:
+								<ul id="turnResToggled" style="display: none;">
+									<li>realtime: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>simultaneous turnbased: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>turnbased: <input type="checkbox" id="" onclick="filterTable()"></li>
+								</ul>
+							</li>
+							<li>Niches/mechhanics [<a href="javascript:void(0)" id="gameMechanicsToggle" onclick="showhide('gameMechanicsToggle', 'gameMechanicsToggled', 'show', 'hide')">show</a>]:
+								<ul id="gameMechanicsToggled" style="display: none;">
+									<li>6DOF: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>exploration: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>games where we all leave with our own story to tell: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>games where we're in a ship: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>games where i can look through cameras: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>puzzle: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>party games: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>sandbox survival: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>stealth/hidden movement: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>variable player powers: <input type="checkbox" id="" onclick="filterTable()"></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Watchable [<a href="javascript:void(0)" id="watchableToggle" onclick="showhide('watchableToggle', 'watchableToggled', 'show', 'hide')">show</a>]:
+						<ul id="watchableToggled" style="display: none;">
+							<li>Movies&nbsp;: 	<input type="checkbox" id="movie" onclick="filterTable()"></li>
+							<li>Series&nbsp;: 	<input type="checkbox" id="series" onclick="filterTable()"></li>
+							<li>youtube: 		<input type="checkbox" id="youtube" onclick="filterTable()"></li>
+						</ul>
+					</li>
+					<li>Listenable [<a href="javascript:void(0)" id="listenableToggle" onclick="showhide('listenableToggle', 'listenableToggled', 'show', 'hide')">show</a>]:
+						<ul id="listenableToggled" style="display: none;">
+							<li>Music: <input type="checkbox" id="music" onclick="filterTable()">
+								<ul>
+									<li>Albums&nbsp;: 	<input type="checkbox" id="album" onclick="filterTable()"></li>
+									<li>Remixes: 		<input type="checkbox" id="remix" onclick="filterTable()"></li>
+									<li>Mashups: 		<input type="checkbox" id="mashup" onclick="filterTable()"></li>
+								</ul>
+							</li>
+							<li>Podcasts: <input type="checkbox" id="podcast" onclick="filterTable()"></li>
+						</ul>
+					</li>
+					<li>Readable [<a href="javascript:void(0)" id="readableToggle" onclick="showhide('readableToggle', 'readableToggled', 'show', 'hide')">show</a>]:
+						<ul id="readableToggled" style="display: none;">
+							<li>Books&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="book" onclick="filterTable()"></li>
+							<li>Websites: 					<input type="checkbox" id="website" onclick="filterTable()"></li>
+						</ul>
+					</li>
+					<li>Websites [<a href="javascript:void(0)" id="websitesToggle" onclick="showhide('websitesToggle', 'websitesToggled', 'show', 'hide')">show</a>]
+						<ul id="websitesToggled" style="display: none;">
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>Not media [<a href="javascript:void(0)" id="notMediaToggle" onclick="showhide('notMediaToggle', 'notMediaToggled', 'show', 'hide')">show</a>]:
+				<ul id="notMediaToggled" style="display: none;">
+					<li>Software: <input type="checkbox" id="software" onclick="filterTable()">
+						<ul>
+							<li>Free software: <input type="checkbox" id="freeSoftware" onclick="filterTable()"></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
 	
 	<!-- the big table of things-->
 	<table id="theTable">
