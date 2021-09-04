@@ -183,9 +183,28 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 					</li>
 					<li>Watchable [<a href="javascript:void(0)" id="watchableToggle" onclick="showhide('watchableToggle', 'watchableToggled', 'show', 'hide')">show</a>]:
 						<ul id="watchableToggled" style="display: none;">
-							<li>Movies&nbsp;: 	<input type="checkbox" id="movie" onclick="filterTable()"></li>
-							<li>Series&nbsp;: 	<input type="checkbox" id="series" onclick="filterTable()"></li>
-							<li>youtube: 		<input type="checkbox" id="youtube" onclick="filterTable()"></li>
+							<li>runtime [<a href="javascript:void(0)" id="runtimeToggle" onclick="showhide('runtimeToggle', 'runtimeToggled', 'show', 'hide')">show</a>]:
+								<ul id="runtimeToggled" style="display: none;">
+									<li>&lt;60s: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>1-5m: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>5-10m: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>10-30m: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>30-60m: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>1.0-1.5h: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>1.5h++: <input type="checkbox" id="" onclick="filterTable()"></li>
+								</ul>
+							</li>
+							<li>misc tags [<a href="javascript:void(0)" id="miscWatchableToggle" onclick="showhide('miscWatchableToggle', 'miscWatchableToggled', 'show', 'hide')">show</a>]:
+								<ul id="miscWatchableToggled" style="display: none;">
+									<li>adventure: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>animated: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>educational: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>episodic: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>funny: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>shitposty: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>youtube: <input type="checkbox" id="" onclick="filterTable()"></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<li>Listenable [<a href="javascript:void(0)" id="listenableToggle" onclick="showhide('listenableToggle', 'listenableToggled', 'show', 'hide')">show</a>]:
