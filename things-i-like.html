@@ -231,7 +231,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 							<li>Books&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="book" onclick="filterTable()"></li>
 						</ul>
 					</li>
-					<li>Websites [<a href="javascript:void(0)" id="websitesToggle" onclick="showhide('websitesToggle', 'websitesToggled', 'show', 'hide')">show</a>]
+					<li>Websites [<a href="javascript:void(0)" id="websitesToggle" onclick="showhide('websitesToggle', 'websitesToggled', 'show', 'hide')">show</a>]:
 						<ul id="websitesToggled" style="display: none;">
 							<li>Blogs: <input type="checkbox" id="" onclick="filterTable()"></li>
 							<li>Documentation/tutorials: <input type="checkbox" id="" onclick="filterTable()"></li>
@@ -242,11 +242,32 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</li>
 			<li>Not media [<a href="javascript:void(0)" id="notMediaToggle" onclick="showhide('notMediaToggle', 'notMediaToggled', 'show', 'hide')">show</a>]:
 				<ul id="notMediaToggled" style="display: none;">
-					<li>Software: <input type="checkbox" id="software" onclick="filterTable()">
-						<ul>
-							<li>Free software: <input type="checkbox" id="freeSoftware" onclick="filterTable()"></li>
+					<li>Software [<a href="javascript:void(0)" id="softwareToggle" onclick="showhide('softwareToggle', 'softwareToggled', 'show', 'hide')">show</a>]:
+						<ul id="softwareToggled" style="display: none;">
+							<li>Price [<a href="javascript:void(0)" id="softwarePriceToggle" onclick="showhide('softwarePriceToggle', 'softwarePriceToggled', 'show', 'hide')">show</a>]:
+								<ul id="softwarePriceToggled" style="display: none;">
+									<li>free as in freedom: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>free as in non-paid: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>free as in free trial: <input type="checkbox" id="" onclick="filterTable()"></li>
+								</ul>
+							</li>
+							<li>Applications [<a href="javascript:void(0)" id="applicationsToggle" onclick="showhide('applicationsToggle', 'applicationsToggled', 'show', 'hide')">show</a>]:
+								<ul id="applicationsToggled" style="display: none;">
+									<li>audio editors: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>image editors: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>video editors: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>code/text/word editors: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>socializing apps: <input type="checkbox" id="" onclick="filterTable()"></li>
+								</ul>
+							</li>
+							<li>Other software stuff [<a href="javascript:void(0)" id="miscSoftwareToggle" onclick="showhide('miscSoftwareToggle', 'miscSoftwareToggled', 'show', 'hide')">show</a>]:
+								<ul id="miscSoftwareToggled" style="display: none;">
+									<li>operating systems: <input type="checkbox" id="" onclick="filterTable()"></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
+					<li>Random: <input type="checkbox" id="" onclick="filterTable()"></li>
 				</ul>
 			</li>
 		</ul>
