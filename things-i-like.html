@@ -209,11 +209,18 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 					</li>
 					<li>Listenable [<a href="javascript:void(0)" id="listenableToggle" onclick="showhide('listenableToggle', 'listenableToggled', 'show', 'hide')">show</a>]:
 						<ul id="listenableToggled" style="display: none;">
-							<li>Music: <input type="checkbox" id="music" onclick="filterTable()">
-								<ul>
+							<li>Music [<a href="javascript:void(0)" id="musicToggle" onclick="showhide('musicToggle', 'musicToggled', 'show', 'hide')">show</a>]: <input type="checkbox" id="music" onclick="filterTable()">
+								<ul id="musicToggled" style="display: none;">
 									<li>Albums&nbsp;: 	<input type="checkbox" id="album" onclick="filterTable()"></li>
 									<li>Remixes: 		<input type="checkbox" id="remix" onclick="filterTable()"></li>
 									<li>Mashups: 		<input type="checkbox" id="mashup" onclick="filterTable()"></li>
+									<li>Popular-ish sound descriptors [<a href="javascript:void(0)" id="genreToggle" onclick="showhide('genreToggle', 'genreToggled', 'show', 'hide')">show</a>]:
+										<ul id="genreToggled" style="display: none;">
+											<li>genre1: </li>
+											<li>genre2: </li>
+											<li>genre3: </li>
+										</ul>
+									</li>
 								</ul>
 							</li>
 							<li>Podcasts: <input type="checkbox" id="podcast" onclick="filterTable()"></li>
