@@ -129,7 +129,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 		filters
 		a bunch of checkboxes that all start unticked, showing all
 	-->
-	<!-- hide/show is working, filters are broken. remined to fix in the future -->
+	<!-- hide/show is working, some filters are broken. reminder that this section needs fixing -->
 	<div id="filters" style="display: none; border: 1px solid #008ae6; border-collapse: collapse;">
 		<p>The filters are just broad strokes, for example music genres are just a mess sometimes. I have them mostly because i hope to keep this list growing and having a filter's gonna help.</p>
 		<p style="text-indent: 50px;">If any checkboxes are ticked, only stuff matching the checkboxes are shown. Clicking/tapping on any tags instead of chekcboxes in the filters list takes you to another page talkin bout why i like the niche/subgenre.</p>
@@ -144,40 +144,40 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 								<ul id="playersToggled" style="display: none;">
 									<li>playercount [<a href="javascript:void(0)" id="playercountToggle" onclick="showhide('playercountToggle', 'playercountToggled', 'show', 'hide')">show</a>]:
 										<ul id="playercountToggled" style="display: none;">
-											<li>1: <input type="checkbox" id="" onclick="filterTable()"></li>
-											<li>2: <input type="checkbox" id="" onclick="filterTable()"></li>
-											<li>3-4: <input type="checkbox" id="" onclick="filterTable()"></li>
-											<li>4++: <input type="checkbox" id="" onclick="filterTable()"></li>
+											<li>1: <input type="checkbox" id="1player" onclick="filterTable()"></li>
+											<li>2: <input type="checkbox" id="2player" onclick="filterTable()"></li>
+											<li>3-4: <input type="checkbox" id="34player" onclick="filterTable()"></li>
+											<li>4++: <input type="checkbox" id="4ppplayer" onclick="filterTable()"></li>
 										</ul>
 									</li>
 									<li>player alignment [<a href="javascript:void(0)" id="playerAlignmentToggle" onclick="showhide('playerAlignmentToggle', 'playerAlignmentToggled', 'show', 'hide')">show</a>]:
 										<ul id="playerAlignmentToggled" style="display: none;">
-											<li>coop: <input type="checkbox" id="" onclick="filterTable()"></li>
-											<li>teambased: <input type="checkbox" id="" onclick="filterTable()"></li>
-											<li>ffa: <input type="checkbox" id="" onclick="filterTable()"></li>
+											<li>coop: <input type="checkbox" id="coop" onclick="filterTable()"></li>
+											<li>teambased: <input type="checkbox" id="teambased" onclick="filterTable()"></li>
+											<li>ffa: <input type="checkbox" id="ffa" onclick="filterTable()"></li>
 										</ul>
 									</li>
 								</ul>
 							</li>
 							<li>turn resolution [<a href="javascript:void(0)" id="turnResToggle" onclick="showhide('turnResToggle', 'turnResToggled', 'show', 'hide')">show</a>]:
 								<ul id="turnResToggled" style="display: none;">
-									<li>realtime: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>simultaneous turnbased: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>turnbased: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>realtime: <input type="checkbox" id="realtime" onclick="filterTable()"></li>
+									<li>simultaneous turnbased: <input type="checkbox" id="simultaneousTurnbased" onclick="filterTable()"></li>
+									<li>turnbased: <input type="checkbox" id="turnbased" onclick="filterTable()"></li>
 								</ul>
 							</li>
 							<li>Niches/mechhanics [<a href="javascript:void(0)" id="gameMechanicsToggle" onclick="showhide('gameMechanicsToggle', 'gameMechanicsToggled', 'show', 'hide')">show</a>]:
 								<ul id="gameMechanicsToggled" style="display: none;">
-									<li>6DOF: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>exploration: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>games where we all leave with our own story to tell: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>games where we're in a ship: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>games where i can look through cameras: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>puzzle: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>party games: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>sandbox survival: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>stealth/hidden movement: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>variable player powers: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>6DOF: <input type="checkbox" id="6dof" onclick="filterTable()"></li>
+									<li>exploration: <input type="checkbox" id="exploration" onclick="filterTable()"></li>
+									<li>games where we all leave with our own story to tell: <input type="checkbox" id="storyGenerator" onclick="filterTable()"></li>
+									<li>games where we're in a ship: <input type="checkbox" id="shipGame" onclick="filterTable()"></li>
+									<li>games where i can look through cameras: <input type="checkbox" id="cameraGame" onclick="filterTable()"></li>
+									<li>puzzle: <input type="checkbox" id="puzzle" onclick="filterTable()"></li>
+									<li>party games: <input type="checkbox" id="partyGame" onclick="filterTable()"></li>
+									<li>sandbox survival: <input type="checkbox" id="sandboxSurvival" onclick="filterTable()"></li>
+									<li>stealth/hidden movement: <input type="checkbox" id="stealth" onclick="filterTable()"></li>
+									<li>variable player powers: <input type="checkbox" id="variablePlayerPowers" onclick="filterTable()"></li>
 								</ul>
 							</li>
 						</ul>

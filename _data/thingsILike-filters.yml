@@ -1,16 +1,17 @@
 # each # incremented is another level down in the lists
+# currently fixing videogame subfilters
 
 # media
 ## playable
 - name: boardgame
 - name: videogame
-### players
+## players
 #### playercount
-- name: 1player
-- name: 2plauer
-- name: 3-4player
-- name: 4++player
-#### player alignment
+#- name: 1player
+#- name: 2player
+#- name: 34player
+#- name: 4ppplayer
+### player alignment
 - name: coop
 - name: teambased
 - name: ffa
@@ -18,23 +19,22 @@
 - name: realtime
 - name: simultaneousTurnbased
 - name: turnbased
-### niches/mechanics
-- name: 6dof
-- name: exploration
-- name: storyGenerator
-- name: shipGame
-- name: cameraGame
-- name: puzzle
-- name: partyGame
-- name: sandboxSurvival
-- name: stealth
-- name: variablePlayerPowers
+#### niches/mechanics
+#- name: 6dof
+#- name: exploration
+#- name: storyGenerator
+#- name: shipGame
+#- name: cameraGame
+#- name: puzzle
+#- name: partyGame
+#- name: sandboxSurvival
+#- name: stealth
+#- name: variablePlayerPowers
 
-## watchable
-- name: movie
-- name: series
-- name: youtube
-
+### watchable
+#### runtme
+#### misc tags
+#
 ## listenable
 - name: music
 - name: album
@@ -44,8 +44,12 @@
 
 ## readable
 - name: book
-- name: website
 
-# not media
-- name: software
-- name: freeSoftware
+### Websites
+#- name: blog
+#- name: documentation
+#- name: useless
+#
+## not media
+### software
+### random
