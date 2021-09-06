@@ -6,11 +6,11 @@
 - name: boardgame
 - name: videogame
 ## players
-#### playercount
-#- name: 1player
-#- name: 2player
-#- name: 34player
-#- name: 4ppplayer
+### playercount
+- name: onePlayer
+- name: twoPlayer
+- name: threeFourPlayer
+- name: fivePPPlayer
 ### player alignment
 - name: coop
 - name: teambased
