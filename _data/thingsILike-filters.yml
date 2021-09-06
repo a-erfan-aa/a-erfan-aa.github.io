@@ -19,17 +19,17 @@
 - name: realtime
 - name: simultaneousTurnbased
 - name: turnbased
-#### niches/mechanics
-#- name: 6dof
-#- name: exploration
-#- name: storyGenerator
-#- name: shipGame
-#- name: cameraGame
-#- name: puzzle
-#- name: partyGame
-#- name: sandboxSurvival
-#- name: stealth
-#- name: variablePlayerPowers
+### niches/mechanics
+- name: sixDOF
+- name: exploration
+- name: storyGenerator
+- name: shipGame
+- name: cameraGame
+- name: puzzle
+- name: partyGame
+- name: sandboxSurvival
+- name: stealth
+- name: variablePlayerPowers
 
 ### watchable
 #### runtme
