@@ -1,5 +1,5 @@
 # each # incremented is another level down in the lists
-# skipped music genres subfilter, adding readable filters
+# skipped music genres subfilter, not media filters in progress
 
 # media
 ## playable
@@ -47,6 +47,7 @@
 - name: episodic
 - name: funny
 - name: shitposty
+- name: tutorial
 - name: youtube
 
 ## listenable
@@ -59,11 +60,11 @@
 ## readable
 - name: book
 
-### Websites
-#- name: blog
-#- name: documentation
-#- name: useless
-#
+## Websites
+- name: blog
+- name: documentation
+- name: useless
+
 ## not media
 ### software
 ### random
