@@ -244,32 +244,32 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</li>
 			<li>Not media [<a href="javascript:void(0)" id="notMediaToggle" onclick="showhide('notMediaToggle', 'notMediaToggled', 'show', 'hide')">show</a>]:
 				<ul id="notMediaToggled" style="display: none;">
-					<li>Software [<a href="javascript:void(0)" id="softwareToggle" onclick="showhide('softwareToggle', 'softwareToggled', 'show', 'hide')">show</a>]:
+					<li>Software [<a href="javascript:void(0)" id="softwareToggle" onclick="showhide('softwareToggle', 'softwareToggled', 'show', 'hide')">show</a>]: <input type="checkbox" id="software" onclick="filterTable()">
 						<ul id="softwareToggled" style="display: none;">
 							<li>Price [<a href="javascript:void(0)" id="softwarePriceToggle" onclick="showhide('softwarePriceToggle', 'softwarePriceToggled', 'show', 'hide')">show</a>]:
 								<ul id="softwarePriceToggled" style="display: none;">
-									<li>free as in freedom: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>free as in non-paid: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>free as in free trial: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>free as in freedom: <input type="checkbox" id="freeSoftware" onclick="filterTable()"></li>
+									<li>free as in non-paid: <input type="checkbox" id="quoteUnquoteFreeSoftware" onclick="filterTable()"></li>
+									<li>free as in free trial: <input type="checkbox" id="freeTrialSoftware" onclick="filterTable()"></li>
 								</ul>
 							</li>
 							<li>Applications [<a href="javascript:void(0)" id="applicationsToggle" onclick="showhide('applicationsToggle', 'applicationsToggled', 'show', 'hide')">show</a>]:
 								<ul id="applicationsToggled" style="display: none;">
-									<li>audio editors: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>image editors: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>video editors: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>code/text/word editors: <input type="checkbox" id="" onclick="filterTable()"></li>
-									<li>socializing apps: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>audio editors: <input type="checkbox" id="audioEditor" onclick="filterTable()"></li>
+									<li>image editors: <input type="checkbox" id="imageEditor" onclick="filterTable()"></li>
+									<li>video editors: <input type="checkbox" id="videoEditor" onclick="filterTable()"></li>
+									<li>code/text/word editors: <input type="checkbox" id="textEditor" onclick="filterTable()"></li>
+									<li>socializing apps: <input type="checkbox" id="socialApp" onclick="filterTable()"></li>
 								</ul>
 							</li>
 							<li>Other software stuff [<a href="javascript:void(0)" id="miscSoftwareToggle" onclick="showhide('miscSoftwareToggle', 'miscSoftwareToggled', 'show', 'hide')">show</a>]:
 								<ul id="miscSoftwareToggled" style="display: none;">
-									<li>operating systems: <input type="checkbox" id="" onclick="filterTable()"></li>
+									<li>operating systems: <input type="checkbox" id="OS" onclick="filterTable()"></li>
 								</ul>
 							</li>
 						</ul>
 					</li>
-					<li>Random: <input type="checkbox" id="" onclick="filterTable()"></li>
+					<li>Random: <input type="checkbox" id="randomSoftware" onclick="filterTable()"></li>
 				</ul>
 			</li>
 		</ul>

@@ -1,5 +1,5 @@
 # each # incremented is another level down in the lists
-# skipped music genres subfilter, not media filters in progress
+# music subfilters in progress
 
 # media
 ## playable
@@ -65,6 +65,20 @@
 - name: documentation
 - name: useless
 
-## not media
-### software
-### random
+# not media
+## software
+- name: software
+### price
+- name: freeSoftware
+- name: quoteUnquoteFreeSoftware
+- name: freeTrialSoftware
+### applications
+- name: audioEditor
+- name: imageEditor
+- name: videoEditor
+- name: textEditor
+- name: socialApp
+### other softwares
+- name: OS
+## random
+- name: randomSoftware
