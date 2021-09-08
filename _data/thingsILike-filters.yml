@@ -1,5 +1,5 @@
+# list of filters to be used to generate thingsILike-filterTable.js for use with things-i-like.html
 # each # incremented is another level down in the lists
-# music subfilters in progress
 
 # media
 ## playable
@@ -55,6 +55,11 @@
 - name: album
 - name: remix
 - name: mashup
+### genres
+- name: folk
+- name: funk
+- name: mathrock
+- name: rocky
 - name: podcast
 
 ## readable

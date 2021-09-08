@@ -129,7 +129,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 		filters
 		a bunch of checkboxes that all start unticked, showing all
 	-->
-	<!-- hide/show is working, adding rest of subfilters-->
+	<!-- hide/show is working, now just to test, prettify and add tags to existing items -->
 	<div id="filters" style="display: none; border: 1px solid #008ae6; border-collapse: collapse;">
 		<p>The filters are just broad strokes, for example music genres are just a mess sometimes. I have them mostly because i hope to keep this list growing and having a filter's gonna help.</p>
 		<p style="text-indent: 50px;">If any checkboxes are ticked, only stuff matching the checkboxes are shown. Clicking/tapping on any tags instead of chekcboxes in the filters list takes you to another page talkin bout why i like the niche/subgenre.</p>
@@ -216,11 +216,13 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 									<li>Albums&nbsp;: 	<input type="checkbox" id="album" onclick="filterTable()"></li>
 									<li>Remixes: 		<input type="checkbox" id="remix" onclick="filterTable()"></li>
 									<li>Mashups: 		<input type="checkbox" id="mashup" onclick="filterTable()"></li>
-									<li>Popular-ish sound descriptors [<a href="javascript:void(0)" id="genreToggle" onclick="showhide('genreToggle', 'genreToggled', 'show', 'hide')">show</a>]:
+									<li>Popular-ish sound/genre descriptors [<a href="javascript:void(0)" id="genreToggle" onclick="showhide('genreToggle', 'genreToggled', 'show', 'hide')">show</a>]:
 										<ul id="genreToggled" style="display: none;">
-											<li>genre1: <input type="checkbox" id="" onclick="filterTable()"></li>
-											<li>genre2: <input type="checkbox" id="" onclick="filterTable()"></li>
-											<li>genre3: <input type="checkbox" id="" onclick="filterTable()"></li>
+											<li>folky: <input type="checkbox" id="folk" onclick="filterTable()"></li>
+											<li>funky: <input type="checkbox" id="funk" onclick="filterTable()"></li>
+											<li>mathrocky: <input type="checkbox" id="mathrock" onclick="filterTable()"></li>
+											<li>rocky: <input type="checkbox" id="rocky" onclick="filterTable()"></li>
+											<li>more genres at some point</li>
 										</ul>
 									</li>
 								</ul>
