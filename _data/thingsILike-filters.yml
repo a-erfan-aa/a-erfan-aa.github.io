@@ -33,7 +33,21 @@
 
 ## watchable
 ### runtme
+- name: sixtySeconds
+- name: oneToFiveMins
+- name: fiveToTenMins
+- name: tenToThirtyMins
+- name: thirtyToSixtyMins
+- name: sixtyToNinetyMins
+- name: moreThanNinetyMins
 ### misc tags
+- name: adventure
+- name: animated
+- name: educational
+- name: episodic
+- name: funny
+- name: shitposty
+- name: youtube
 
 ## listenable
 - name: music
