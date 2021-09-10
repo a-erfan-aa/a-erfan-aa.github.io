@@ -66,6 +66,8 @@
 - name: book
 
 ## Websites
+- name: website
+### subgenres i suppose
 - name: blog
 - name: documentation
 - name: useless
