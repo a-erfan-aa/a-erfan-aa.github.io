@@ -218,9 +218,9 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 									<li>Mashups: 		<input type="checkbox" id="mashup" onclick="filterTable()"></li>
 									<li>Popular-ish sound/genre descriptors [<a href="javascript:void(0)" id="genreToggle" onclick="showhide('genreToggle', 'genreToggled', 'show', 'hide')">show</a>]:
 										<ul id="genreToggled" style="display: none;">
-											<li>folky: <input type="checkbox" id="folk" onclick="filterTable()"></li>
-											<li>funky: <input type="checkbox" id="funk" onclick="filterTable()"></li>
-											<li>mathrocky: <input type="checkbox" id="mathrock" onclick="filterTable()"></li>
+											<li>folky: <input type="checkbox" id="folky" onclick="filterTable()"></li>
+											<li>funky: <input type="checkbox" id="funky" onclick="filterTable()"></li>
+											<li>mathrocky: <input type="checkbox" id="mathrocky" onclick="filterTable()"></li>
 											<li>rocky: <input type="checkbox" id="rocky" onclick="filterTable()"></li>
 											<li>more genres at some point</li>
 										</ul>
@@ -235,7 +235,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 							<li>Books&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="book" onclick="filterTable()"></li>
 						</ul>
 					</li>
-					<li>Websites [<a href="javascript:void(0)" id="websitesToggle" onclick="showhide('websitesToggle', 'websitesToggled', 'show', 'hide')">show</a>]:
+					<li>Websites [<a href="javascript:void(0)" id="websitesToggle" onclick="showhide('websitesToggle', 'websitesToggled', 'show', 'hide')">show</a>]: <input type="checkbox" id="website" onclick="filterTable()">
 						<ul id="websitesToggled" style="display: none;">
 							<li>Blogs: 			<input type="checkbox" id="blog" onclick="filterTable()"></li>
 							<li>Documentation: 	<input type="checkbox" id="documentation" onclick="filterTable()"></li>
@@ -296,7 +296,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 		</tr>
 		-->
 		<!-- Aim and Ignite -->
-		<tr class="music album">
+		<tr class="music album rocky">
 			<td><a href="https://en.wikipedia.org/wiki/Aim_and_Ignite">Aim and Ignite</a> (<a href="https://www.youtube.com/watch?v=hcLm1q9Z7-M"><span style="color: #FF0000;">youtube</span></a>|<a href="https://open.spotify.com/album/5mpyqglCM5BpPT5ogj8XHX"><span style="color: #1DB954;">spotify</span></a>|<a href="https://ournameisfun.bandcamp.com/album/aim-and-ignite"><span style="color: #629AA9">bandcamp</span></a>)</td>
 			<td>
 				<ul>
@@ -307,7 +307,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Animals -->
-		<tr class="music album">
+		<tr class="music album rocky mathrocky">
 			<td><a href="https://en.wikipedia.org/wiki/Animals_(This_Town_Needs_Guns_album)">Animals</a> (<a href="https://www.youtube.com/playlist?list=OLAK5uy_n6B52A5ktsNcp9MdgFizN8xHCDpBHIBa4"><span style="color: #FF0000;">youtube</span></a>|<a href="https://open.spotify.com/album/6gl4ylXxmNMpOxBImNe9n3"><span style="color: #1DB954;">spotify</span></a>|<a href="https://thistownneedsguns.bandcamp.com/album/animals"><span style="color: #629AA9">bandcamp</span></a>)</td>
 			<td>
 				<ul>
@@ -318,7 +318,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Bill Wurtz -->
-		<tr class="youtube music">
+		<tr class="music sixtySeconds tenToThirtyMins youtube">
 			<td>Bill Wurtz's stuff</td>
 			<td>
 				<ul>
@@ -329,7 +329,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Bo Burnham -->
-		<tr class="movie youtube music">
+		<tr class="sixtySeconds sixtytoNinetyMins moreThanNinetyMins funny shitposty youtube music">
 			<td><a href="http://www.boburnham.com/">Bo Burnham</a>'s stuff</td>
 			<td>
 				<ul>
@@ -340,7 +340,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- bdg -->
-		<tr class="series youtube music">
+		<tr class="sixtySeconds oneToFiveMins fiveToTenMins tenToThirtyMins thirtyToSixtyMins episodic funny shitposty youtube music">
 			<td><a href="https://www.briandavidgilbert.com/">Brian David Gilbert</a>'s stuff</td>
 			<td>
 				<ul>
@@ -351,7 +351,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Celeste -->
-		<tr class="videogame">
+		<tr class="videogame onePlayer realtime puzzle">
 			<td><a href="http://www.celestegame.com/">Celeste</a></td>
 			<td>
 				<ul>
@@ -363,7 +363,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- COSMO D -->
-		<tr class="videogame series music">
+		<tr class="videogame onePlayer realtime music">
 			<td><a href="https://cosmod.net/">COSMO D</a>'s videogames</td>
 			<td>
 				<ul>
@@ -385,7 +385,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Drew Gooden -->
-		<tr class="youtube">
+		<tr class="sixtySeconds fiveToTenMins tenToThirtyMins funny shitposty youtube">
 			<td>Drew Gooden's stuff</td>
 			<td>
 				<ul>
@@ -395,7 +395,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Discovery -->
-		<tr class="music album">
+		<tr class="music album rocky">
 			<td><a href="https://en.wikipedia.org/wiki/Discovery_(Daft_Punk_album)">Discovery</a> (<a href="https://www.youtube.com/playlist?list=PLSdoVPM5WnndSQEXRz704yQkKwx76GvPV"><span style="color: #FF0000;">youtube</span></a>|<a href="https://open.spotify.com/album/2noRn2Aes5aoNVsU6iWThc"><span style="color: #1DB954;">spotify</span></a>)</td>
 			<td>
 				<ul>
@@ -405,7 +405,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Firefly -->
-		<tr class="series">
+		<tr class="thirtyToSixtyMins sixtyToNinetyMins adventure episodic">
 			<td><a href="https://en.wikipedia.org/wiki/Firefly_(TV_series)">Firefly</a></td>
 			<td>
 				<ul>
@@ -432,7 +432,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Grow (album) -->
-		<tr class="music album">
+		<tr class="music album mathrocky rocky">
 			<td><a href="https://en.wikipedia.org/wiki/Grow_(Chon_album)">Grow</a> (<a href="https://www.youtube.com/playlist?list=PLH22-xSMERQrmeOAp7kJy-0BHfGJbl8Aw"><span style="color: #FF0000;">youtube</span></a>|<a href="https://open.spotify.com/album/3pYRPmrFNBhewVtiN6DBh7"><span style="color: #1DB954;">spotify</span></a>)</td>
 			<td>
 				<ul>
@@ -443,7 +443,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>	
 		<!-- In the Aeroplane Over the Sea -->
-		<tr class="music album">
+		<tr class="music album folky rocky">
 			<td><a href="https://en.wikipedia.org/wiki/In_the_Aeroplane_Over_the_Sea">In the Aeroplane Over the Sea</a> (<a href="https://www.youtube.com/watch?v=jsM7XS-2X50&list=OLAK5uy_mcmpW2ioM2y1kninR5RNG2a_nCfz-AXfY&index=2"><span style="color: #FF0000;">youtube</span></a>|<a href="https://open.spotify.com/album/5COXoP5kj2DWfCDg0vxi4F"><span style="color: #1DB954;">spotify</span></a>|<a href="https://neutralmilkhotel.bandcamp.com/album/in-the-aeroplane-over-the-sea"><span style="color: #629AA9">bandcamp</span></a>)</td>
 			<td>
 				<ul>
@@ -455,7 +455,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Joel Haver -->
-		<tr class="movie series youtube">
+		<tr class="sixtySeconds oneToFiveMins fiveToTenMins thirtyToSixtyMins sixtyToNinetyMins moreThanNinetyMins adventure animated episodic funny shitposty youtube ">
 			<td>Joel Haver's stuff</td>
 			<td>
 				<ul>
@@ -476,7 +476,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>	
 		<!-- Mysterious Benedict Society -->
-		<tr class="series book">
+		<tr class="episodic book">
 			<td><a href="https://en.wikipedia.org/wiki/The_Mysterious_Benedict_Society_(series)">The Mysterious Benedict Society</a></td>
 			<td>
 				<ul>
@@ -490,7 +490,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Neil Cic -->
-		<tr class="videogame youtube music album mashup website">
+		<tr class="videogame onePlayer oneToFiveMins animated funny shitposty youtube music album mashup website">
 			<td><a href="http://www.neilcic.com/">Neil Cicierega</a>'s stuff</td>
 			<td>
 				<ul>
@@ -503,7 +503,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- NCase -->
-		<tr class="videogame website">
+		<tr class="videogame onePlayer website blog">
 			<td><a href="https://ncase.me/">Nicky Case</a>'s stuff</td>
 			<td>
 				<ul>
@@ -513,7 +513,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Oneshot -->
-		<tr class="videogame music">
+		<tr class="videogame onePlayer realtime exploration puzzle music">
 			<td><a href="https://www.oneshot-game.com/">OneShot</a></td>
 			<td>
 				<ul>
@@ -524,7 +524,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Outer Wilds -->
-		<tr class="videogame music">
+		<tr class="videogame onePlayer realtime sixDOF exploration shipGame cameraGame puzzle music">
 			<td><a href="https://www.mobiusdigitalgames.com/outer-wilds.html">Outer Wilds</a></td>
 			<td>
 				<ul>
@@ -542,7 +542,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- OTGW -->
-		<tr class="series">
+		<tr class="fivetoTenMins adventure animated funny music">
 			<td><a href="https://en.wikipedia.org/wiki/Over_the_Garden_Wall">Over the Garden Wall</a></td>
 			<td>
 				<ul>
@@ -552,7 +552,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Passionflower -->
-		<tr class="music">
+		<tr class="music folky rocky">
 			<td>Passionflower (<a href="https://www.youtube.com/watch?v=nY7GnAq6Znw"><span style="color: #FF0000;">youtube</span></a>|<a href="https://open.spotify.com/album/0qnEGgQh1D4qz4hfwvKieW"><span style="color: #1DB954;">spotify</span></a>)</td>
 			<td>
 				<ul>
@@ -573,7 +573,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- PIXAR -->
-		<tr class="movie series">
+		<tr class="sixtySeconds oneToFiveMins fiveToTenMins tenToThirtyMins thirtyToSixtyMins sixtyToNinetyMins moreThanNinetyMins adventure animated funny">
 			<td><a href="https://www.pixar.com/">PIXAR movies</a></td>
 			<td>
 				<ul>
@@ -599,7 +599,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- SUSD -->
-		<tr class="boardgame youtube website">
+		<tr class="boardgame youtube website blog">
 			<td>Shut up and sit down</td>
 			<td>
 				<ul>
@@ -609,7 +609,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- treasure planet -->
-		<tr class="movie">
+		<tr class="moreThanNinetyMins adventure animated">
 			<td><a href="https://en.wikipedia.org/wiki/Treasure_Planet">Treasure Planet</a></td>
 			<td>
 				<ul>
@@ -640,7 +640,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- UNDERTALE -->
-		<tr class="videogame music">
+		<tr class="videogame realtime turnbased exploration puzzle music">
 			<td><a href="https://undertale.com/">UNDERTALE</a></td>
 			<td>
 				<ul>
@@ -651,7 +651,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Vulfpeck -->
-		<tr class="music">
+		<tr class="music funky">
 			<td><a href="https://vulfpeck.com/">Vulfpeck</a>'s stuff</td>
 			<td>
 				<ul>
