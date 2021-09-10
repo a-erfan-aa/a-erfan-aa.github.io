@@ -56,9 +56,9 @@
 - name: remix
 - name: mashup
 ### genres
-- name: folk
-- name: funk
-- name: mathrock
+- name: folky
+- name: funky
+- name: mathrocky
 - name: rocky
 - name: podcast
 
