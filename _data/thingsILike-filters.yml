@@ -1,13 +1,53 @@
+# list of filters to be used to generate thingsILike-filterTable.js for use with things-i-like.html
 # each # incremented is another level down in the lists
 
 # media
 ## playable
 - name: boardgame
 - name: videogame
+## players
+### playercount
+- name: onePlayer
+- name: twoPlayer
+- name: threeFourPlayer
+- name: fivePPPlayer
+### player alignment
+- name: coop
+- name: teambased
+- name: ffa
+### turn resolution
+- name: realtime
+- name: simultaneousTurnbased
+- name: turnbased
+### niches/mechanics
+- name: sixDOF
+- name: exploration
+- name: storyGenerator
+- name: shipGame
+- name: cameraGame
+- name: puzzle
+- name: partyGame
+- name: sandboxSurvival
+- name: stealth
+- name: variablePlayerPowers
 
 ## watchable
-- name: movie
-- name: series
+### runtme
+- name: sixtySeconds
+- name: oneToFiveMins
+- name: fiveToTenMins
+- name: tenToThirtyMins
+- name: thirtyToSixtyMins
+- name: sixtyToNinetyMins
+- name: moreThanNinetyMins
+### misc tags
+- name: adventure
+- name: animated
+- name: educational
+- name: episodic
+- name: funny
+- name: shitposty
+- name: tutorial
 - name: youtube
 
 ## listenable
@@ -15,12 +55,37 @@
 - name: album
 - name: remix
 - name: mashup
+### genres
+- name: folky
+- name: funky
+- name: mathrocky
+- name: rocky
 - name: podcast
 
 ## readable
 - name: book
+
+## Websites
 - name: website
+### subgenres i suppose
+- name: blog
+- name: documentation
+- name: useless
 
 # not media
+## software
 - name: software
+### price
 - name: freeSoftware
+- name: quoteUnquoteFreeSoftware
+- name: freeTrialSoftware
+### applications
+- name: audioEditor
+- name: imageEditor
+- name: videoEditor
+- name: textEditor
+- name: socialApp
+### other softwares
+- name: OS
+## random
+- name: randomSoftware

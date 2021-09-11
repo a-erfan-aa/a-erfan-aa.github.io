@@ -123,59 +123,158 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 
 <!-- the BIG list -->
 <div>
-	<h3>The big list of things [<a href="javascript:void(0)" id="filterToggle" onclick="showhide('filterToggle', 'filters', 'click/tap to show filters', 'click/tap to hide filters')">click/tap to hide filters</a>]</h3>
-	<p>The filters are just broad strokes, for example you can both play things and read things on a website. I just have them because i hope to keep this list growing and having a filter's gonna help.</p>
+	<h3>The big list of things [<a href="javascript:void(0)" id="filterToggle" onclick="showhide('filterToggle', 'filters', 'click/tap to show filters', 'click/tap to hide filters')">click/tap to show filters</a>]</h3>
 	
 	<!--
-	filters
-	a bunch of checkboxes that all start unticked, showing all
+		filters
+		a bunch of checkboxes that all start unticked, showing all
 	-->
-	<ul id="filters">
-		<li>Media:
-			<ul>
-				<li>Playable:
-					<ul>
-						<li>Boardgames: <input type="checkbox" id="boardgame" onclick="filterTable()"></li>
-						<li>Videogames: <input type="checkbox" id="videogame" onclick="filterTable()"></li>
-					</ul>
-				</li>
-				<li>Watchable:
-					<ul>
-						<li>Movies&nbsp;: 	<input type="checkbox" id="movie" onclick="filterTable()"></li>
-						<li>Series&nbsp;: 	<input type="checkbox" id="series" onclick="filterTable()"></li>
-						<li>youtube: 		<input type="checkbox" id="youtube" onclick="filterTable()"></li>
-					</ul>
-				</li>
-				<li>Listenable:
-					<ul>
-						<li>Music: <input type="checkbox" id="music" onclick="filterTable()">
-							<ul>
-								<li>Albums&nbsp;: 	<input type="checkbox" id="album" onclick="filterTable()"></li>
-								<li>Remixes: 		<input type="checkbox" id="remix" onclick="filterTable()"></li>
-								<li>Mashups: 		<input type="checkbox" id="mashup" onclick="filterTable()"></li>
-							</ul>
-						</li>
-						<li>Podcasts: <input type="checkbox" id="podcast" onclick="filterTable()"></li>
-					</ul>
-				</li>
-				<li>Readable:
-					<ul>
-						<li>Books&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="book" onclick="filterTable()"></li>
-						<li>Websites: 					<input type="checkbox" id="website" onclick="filterTable()"></li>
-					</ul>
-				</li>
-			</ul>
-		</li>
-		<li>Not media:
-			<ul>
-				<li>Software: <input type="checkbox" id="software" onclick="filterTable()">
-					<ul>
-						<li>Free software: <input type="checkbox" id="freeSoftware" onclick="filterTable()"></li>
-					</ul>
-				</li>
-			</ul>
-		</li>
-	</ul>
+	<div id="filters" style="display: none; border: 1px solid #008ae6; border-collapse: collapse;">
+		<p>The filters are just broad strokes, for example music genres are just a mess sometimes. I have them mostly because i hope to keep this list growing and having a filter's gonna help.</p>
+		<p style="text-indent: 50px;">If any checkboxes are ticked, only stuff matching the checkboxes are shown. Clicking/tapping on any tags instead of checkboxes in the filters list takes you to another page talkin bout why i like the niche/subgenre.</p>
+		<ul>
+			<li>Media&nbsp;&nbsp;&nbsp;&nbsp; [<a href="javascript:void(0)" id="mediaToggle" onclick="showhide('mediaToggle', 'mediaToggled', 'show', 'hide')">show</a>]:
+				<ul id="mediaToggled" style="display: none;">
+					<li>Playable&nbsp;&nbsp; [<a href="javascript:void(0)" id="playableToggle" onclick="showhide('playableToggle', 'playableToggled', 'show', 'hide')">show</a>]:
+						<ul id="playableToggled" style="display: none;">
+							<li>Boardgames: <input type="checkbox" id="boardgame" onclick="filterTable()"></li>
+							<li>Videogames: <input type="checkbox" id="videogame" onclick="filterTable()"></li>
+							<li>Players [<a href="javascript:void(0)" id="playersToggle" onclick="showhide('playersToggle', 'playersToggled', 'show', 'hide')">show</a>]:
+								<ul id="playersToggled" style="display: none;">
+									<li>playercount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [<a href="javascript:void(0)" id="playercountToggle" onclick="showhide('playercountToggle', 'playercountToggled', 'show', 'hide')">show</a>]:
+										<ul id="playercountToggled" style="display: none;">
+											<li>&nbsp;1&nbsp;: 	<input type="checkbox" id="onePlayer" 		onclick="filterTable()"></li>
+											<li>&nbsp;2&nbsp;: 	<input type="checkbox" id="twoPlayer" 		onclick="filterTable()"></li>
+											<li>3-4: 			<input type="checkbox" id="threeFourPlayer" onclick="filterTable()"></li>
+											<li>5++: 			<input type="checkbox" id="fivePPPlayer" 	onclick="filterTable()"></li>
+										</ul>
+									</li>
+									<li>player alignment [<a href="javascript:void(0)" id="playerAlignmentToggle" onclick="showhide('playerAlignmentToggle', 'playerAlignmentToggled', 'show', 'hide')">show</a>]:
+										<ul id="playerAlignmentToggled" style="display: none;">
+											<li>coop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 		<input type="checkbox" id="coop" 		onclick="filterTable()"></li>
+											<li>teambased: 									<input type="checkbox" id="teambased" 	onclick="filterTable()"></li>
+											<li>ffa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="ffa" 		onclick="filterTable()"></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>turn resolution&nbsp;&nbsp; [<a href="javascript:void(0)" id="turnResToggle" onclick="showhide('turnResToggle', 'turnResToggled', 'show', 'hide')">show</a>]:
+								<ul id="turnResToggled" style="display: none;">
+									<li>realtime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="realtime" 				onclick="filterTable()"></li>
+									<li>simultaneous turnbased: 																		<input type="checkbox" id="simultaneousTurnbased" 	onclick="filterTable()"></li>
+									<li>turnbased&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 		<input type="checkbox" id="turnbased" 				onclick="filterTable()"></li>
+								</ul>
+							</li>
+							<li>Niches/mechhanics [<a href="javascript:void(0)" id="gameMechanicsToggle" onclick="showhide('gameMechanicsToggle', 'gameMechanicsToggled', 'show', 'hide')">show</a>]:
+								<ul id="gameMechanicsToggled" style="display: none;">
+									<li>6DOF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="checkbox" id="sixDOF" 					onclick="filterTable()"></li>
+									<li>exploration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 									<input type="checkbox" id="exploration" 			onclick="filterTable()"></li>
+									<li>games where we're in a ship&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 																													<input type="checkbox" id="shipGame" 				onclick="filterTable()"></li>
+									<li>games where we can look through cameras: 																																												<input type="checkbox" id="cameraGame" 				onclick="filterTable()"></li>
+									<li>games that give us our own little story: 																																												<input type="checkbox" id="storyGenerator" 			onclick="filterTable()"></li>
+									<li>puzzle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 			<input type="checkbox" id="puzzle" 					onclick="filterTable()"></li>
+									<li>party games&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 									<input type="checkbox" id="partyGame" 				onclick="filterTable()"></li>
+									<li>sandbox survival&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 															<input type="checkbox" id="sandboxSurvival" 		onclick="filterTable()"></li>
+									<li>stealth/hidden movement&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 																								<input type="checkbox" id="stealth" 				onclick="filterTable()"></li>
+									<li>variable player powers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 																							<input type="checkbox" id="variablePlayerPowers" 	onclick="filterTable()"></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Watchable&nbsp; [<a href="javascript:void(0)" id="watchableToggle" onclick="showhide('watchableToggle', 'watchableToggled', 'show', 'hide')">show</a>]:
+						<ul id="watchableToggled" style="display: none;">
+							<li>runtime&nbsp;&nbsp; [<a href="javascript:void(0)" id="runtimeToggle" onclick="showhide('runtimeToggle', 'runtimeToggled', 'show', 'hide')">show</a>]:
+								<ul id="runtimeToggled" style="display: none;">
+									<li>&lt;60s&nbsp;&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="sixtySeconds" 		onclick="filterTable()"></li>
+									<li>1-5m&nbsp;&nbsp;&nbsp;&nbsp;: 		<input type="checkbox" id="oneToFiveMins" 		onclick="filterTable()"></li>
+									<li>5-10m&nbsp;&nbsp;&nbsp;: 			<input type="checkbox" id="fiveToTenMins" 		onclick="filterTable()"></li>
+									<li>10-30m&nbsp;&nbsp;: 				<input type="checkbox" id="tenToThirtyMins" 	onclick="filterTable()"></li>
+									<li>30-60m&nbsp;&nbsp;: 				<input type="checkbox" id="thirtyToSixtyMins" 	onclick="filterTable()"></li>
+									<li>1.0-1.5h: 							<input type="checkbox" id="sixtyToNinetyMins" 	onclick="filterTable()"></li>
+									<li>1.5h++&nbsp;&nbsp;: 				<input type="checkbox" id="moreThanNinetyMins" 	onclick="filterTable()"></li>
+								</ul>
+							</li>
+							<li>misc tags [<a href="javascript:void(0)" id="miscWatchableToggle" onclick="showhide('miscWatchableToggle', 'miscWatchableToggled', 'show', 'hide')">show</a>]:
+								<ul id="miscWatchableToggled" style="display: none;">
+									<li>adventure&nbsp;&nbsp;: 						<input type="checkbox" id="adventure" 	onclick="filterTable()"></li>
+									<li>animated&nbsp;&nbsp;&nbsp;: 				<input type="checkbox" id="animated" 	onclick="filterTable()"></li>
+									<li>educational: 								<input type="checkbox" id="educational" onclick="filterTable()"></li>
+									<li>episodic&nbsp;&nbsp;&nbsp;: 				<input type="checkbox" id="episodic" 	onclick="filterTable()"></li>
+									<li>funny&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="funny" 		onclick="filterTable()"></li>
+									<li>shitposty&nbsp;&nbsp;: 						<input type="checkbox" id="shitposty" 	onclick="filterTable()"></li>
+									<li>tutorials&nbsp;&nbsp;:						<input type="checkbox" id="tutorial" 	onclick="filterTable()"></li>
+									<li>youtube&nbsp;&nbsp;&nbsp;&nbsp;: 			<input type="checkbox" id="youtube" 	onclick="filterTable()"></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Listenable [<a href="javascript:void(0)" id="listenableToggle" onclick="showhide('listenableToggle', 'listenableToggled', 'show', 'hide')">show</a>]:
+						<ul id="listenableToggled" style="display: none;">
+							<li>Music [<a href="javascript:void(0)" id="musicToggle" onclick="showhide('musicToggle', 'musicToggled', 'show', 'hide')">show</a>]: <input type="checkbox" id="music" onclick="filterTable()">
+								<ul id="musicToggled" style="display: none;">
+									<li>Albums&nbsp;: 	<input type="checkbox" id="album" 	onclick="filterTable()"></li>
+									<li>Remixes: 		<input type="checkbox" id="remix" 	onclick="filterTable()"></li>
+									<li>Mashups: 		<input type="checkbox" id="mashup" 	onclick="filterTable()"></li>
+									<li>Popular-ish sound/genre descriptors [<a href="javascript:void(0)" id="genreToggle" onclick="showhide('genreToggle', 'genreToggled', 'show', 'hide')">show</a>]:
+										<ul id="genreToggled" style="display: none;">
+											<li>folky&nbsp;&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="folky" 		onclick="filterTable()"></li>
+											<li>funky&nbsp;&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="funky" 		onclick="filterTable()"></li>
+											<li>mathrocky: 						<input type="checkbox" id="mathrocky" 	onclick="filterTable()"></li>
+											<li>rocky&nbsp;&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="rocky" 		onclick="filterTable()"></li>
+											<li>more genres at some point</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>Podcasts&nbsp;&nbsp;&nbsp;&nbsp;: <input type="checkbox" id="podcast" onclick="filterTable()"></li>
+						</ul>
+					</li>
+					<li>Readable&nbsp;&nbsp; [<a href="javascript:void(0)" id="readableToggle" onclick="showhide('readableToggle', 'readableToggled', 'show', 'hide')">show</a>]:
+						<ul id="readableToggled" style="display: none;">
+							<li>Books&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="book" onclick="filterTable()"></li>
+						</ul>
+					</li>
+					<li>Websites&nbsp;&nbsp; [<a href="javascript:void(0)" id="websitesToggle" onclick="showhide('websitesToggle', 'websitesToggled', 'show', 'hide')">show</a>]: <input type="checkbox" id="website" onclick="filterTable()">
+						<ul id="websitesToggled" style="display: none;">
+							<li>Blogs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="blog" 			onclick="filterTable()"></li>
+							<li>Documentation: 											<input type="checkbox" id="documentation" 	onclick="filterTable()"></li>
+							<li>Useless&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 			<input type="checkbox" id="useless" 		onclick="filterTable()"></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>Not media [<a href="javascript:void(0)" id="notMediaToggle" onclick="showhide('notMediaToggle', 'notMediaToggled', 'show', 'hide')">show</a>]:
+				<ul id="notMediaToggled" style="display: none;">
+					<li>Software [<a href="javascript:void(0)" id="softwareToggle" onclick="showhide('softwareToggle', 'softwareToggled', 'show', 'hide')">show</a>]: <input type="checkbox" id="software" onclick="filterTable()">
+						<ul id="softwareToggled" style="display: none;">
+							<li>Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [<a href="javascript:void(0)" id="softwarePriceToggle" onclick="showhide('softwarePriceToggle', 'softwarePriceToggled', 'show', 'hide')">show</a>]:
+								<ul id="softwarePriceToggled" style="display: none;">
+									<li>free as in freedom&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="freeSoftware" 				onclick="filterTable()"></li>
+									<li>free as in non-paid&nbsp;&nbsp;: 		<input type="checkbox" id="quoteUnquoteFreeSoftware" 	onclick="filterTable()"></li>
+									<li>free as in free trial: 					<input type="checkbox" id="freeTrialSoftware" 			onclick="filterTable()"></li>
+								</ul>
+							</li>
+							<li>Applications&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [<a href="javascript:void(0)" id="applicationsToggle" onclick="showhide('applicationsToggle', 'applicationsToggled', 'show', 'hide')">show</a>]:
+								<ul id="applicationsToggled" style="display: none;">
+									<li>audio editors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="audioEditor" onclick="filterTable()"></li>
+									<li>image editors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="imageEditor" onclick="filterTable()"></li>
+									<li>video editors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 	<input type="checkbox" id="videoEditor" onclick="filterTable()"></li>
+									<li>code/text/word editors: 												<input type="checkbox" id="textEditor" 	onclick="filterTable()"></li>
+									<li>socializing apps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 					<input type="checkbox" id="socialApp" 	onclick="filterTable()"></li>
+								</ul>
+							</li>
+							<li>Other software stuff [<a href="javascript:void(0)" id="miscSoftwareToggle" onclick="showhide('miscSoftwareToggle', 'miscSoftwareToggled', 'show', 'hide')">show</a>]:
+								<ul id="miscSoftwareToggled" style="display: none;">
+									<li>operating systems: <input type="checkbox" id="OS" onclick="filterTable()"></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Random: <input type="checkbox" id="randomSoftware" onclick="filterTable()"></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
 	
 	<!-- the big table of things-->
 	<table id="theTable">
@@ -196,7 +295,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 		</tr>
 		-->
 		<!-- Aim and Ignite -->
-		<tr class="music album">
+		<tr class="music album rocky">
 			<td><a href="https://en.wikipedia.org/wiki/Aim_and_Ignite">Aim and Ignite</a> (<a href="https://www.youtube.com/watch?v=hcLm1q9Z7-M"><span style="color: #FF0000;">youtube</span></a>|<a href="https://open.spotify.com/album/5mpyqglCM5BpPT5ogj8XHX"><span style="color: #1DB954;">spotify</span></a>|<a href="https://ournameisfun.bandcamp.com/album/aim-and-ignite"><span style="color: #629AA9">bandcamp</span></a>)</td>
 			<td>
 				<ul>
@@ -207,7 +306,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Animals -->
-		<tr class="music album">
+		<tr class="music album rocky mathrocky">
 			<td><a href="https://en.wikipedia.org/wiki/Animals_(This_Town_Needs_Guns_album)">Animals</a> (<a href="https://www.youtube.com/playlist?list=OLAK5uy_n6B52A5ktsNcp9MdgFizN8xHCDpBHIBa4"><span style="color: #FF0000;">youtube</span></a>|<a href="https://open.spotify.com/album/6gl4ylXxmNMpOxBImNe9n3"><span style="color: #1DB954;">spotify</span></a>|<a href="https://thistownneedsguns.bandcamp.com/album/animals"><span style="color: #629AA9">bandcamp</span></a>)</td>
 			<td>
 				<ul>
@@ -218,7 +317,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Bill Wurtz -->
-		<tr class="youtube music">
+		<tr class="music sixtySeconds tenToThirtyMins youtube">
 			<td>Bill Wurtz's stuff</td>
 			<td>
 				<ul>
@@ -229,7 +328,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Bo Burnham -->
-		<tr class="movie youtube music">
+		<tr class="sixtySeconds sixtytoNinetyMins moreThanNinetyMins funny shitposty youtube music">
 			<td><a href="http://www.boburnham.com/">Bo Burnham</a>'s stuff</td>
 			<td>
 				<ul>
@@ -240,7 +339,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- bdg -->
-		<tr class="series youtube music">
+		<tr class="sixtySeconds oneToFiveMins fiveToTenMins tenToThirtyMins thirtyToSixtyMins episodic funny shitposty youtube music">
 			<td><a href="https://www.briandavidgilbert.com/">Brian David Gilbert</a>'s stuff</td>
 			<td>
 				<ul>
@@ -251,7 +350,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Celeste -->
-		<tr class="videogame">
+		<tr class="videogame onePlayer realtime puzzle">
 			<td><a href="http://www.celestegame.com/">Celeste</a></td>
 			<td>
 				<ul>
@@ -263,7 +362,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- COSMO D -->
-		<tr class="videogame series music">
+		<tr class="videogame onePlayer realtime music">
 			<td><a href="https://cosmod.net/">COSMO D</a>'s videogames</td>
 			<td>
 				<ul>
@@ -285,7 +384,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Drew Gooden -->
-		<tr class="youtube">
+		<tr class="sixtySeconds fiveToTenMins tenToThirtyMins funny shitposty youtube">
 			<td>Drew Gooden's stuff</td>
 			<td>
 				<ul>
@@ -295,7 +394,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Discovery -->
-		<tr class="music album">
+		<tr class="music album rocky">
 			<td><a href="https://en.wikipedia.org/wiki/Discovery_(Daft_Punk_album)">Discovery</a> (<a href="https://www.youtube.com/playlist?list=PLSdoVPM5WnndSQEXRz704yQkKwx76GvPV"><span style="color: #FF0000;">youtube</span></a>|<a href="https://open.spotify.com/album/2noRn2Aes5aoNVsU6iWThc"><span style="color: #1DB954;">spotify</span></a>)</td>
 			<td>
 				<ul>
@@ -305,7 +404,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Firefly -->
-		<tr class="series">
+		<tr class="thirtyToSixtyMins sixtyToNinetyMins adventure episodic">
 			<td><a href="https://en.wikipedia.org/wiki/Firefly_(TV_series)">Firefly</a></td>
 			<td>
 				<ul>
@@ -332,7 +431,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Grow (album) -->
-		<tr class="music album">
+		<tr class="music album mathrocky rocky">
 			<td><a href="https://en.wikipedia.org/wiki/Grow_(Chon_album)">Grow</a> (<a href="https://www.youtube.com/playlist?list=PLH22-xSMERQrmeOAp7kJy-0BHfGJbl8Aw"><span style="color: #FF0000;">youtube</span></a>|<a href="https://open.spotify.com/album/3pYRPmrFNBhewVtiN6DBh7"><span style="color: #1DB954;">spotify</span></a>)</td>
 			<td>
 				<ul>
@@ -343,7 +442,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>	
 		<!-- In the Aeroplane Over the Sea -->
-		<tr class="music album">
+		<tr class="music album folky rocky">
 			<td><a href="https://en.wikipedia.org/wiki/In_the_Aeroplane_Over_the_Sea">In the Aeroplane Over the Sea</a> (<a href="https://www.youtube.com/watch?v=jsM7XS-2X50&list=OLAK5uy_mcmpW2ioM2y1kninR5RNG2a_nCfz-AXfY&index=2"><span style="color: #FF0000;">youtube</span></a>|<a href="https://open.spotify.com/album/5COXoP5kj2DWfCDg0vxi4F"><span style="color: #1DB954;">spotify</span></a>|<a href="https://neutralmilkhotel.bandcamp.com/album/in-the-aeroplane-over-the-sea"><span style="color: #629AA9">bandcamp</span></a>)</td>
 			<td>
 				<ul>
@@ -355,7 +454,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Joel Haver -->
-		<tr class="movie series youtube">
+		<tr class="sixtySeconds oneToFiveMins fiveToTenMins thirtyToSixtyMins sixtyToNinetyMins moreThanNinetyMins adventure animated episodic funny shitposty youtube ">
 			<td>Joel Haver's stuff</td>
 			<td>
 				<ul>
@@ -376,7 +475,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>	
 		<!-- Mysterious Benedict Society -->
-		<tr class="series book">
+		<tr class="episodic book">
 			<td><a href="https://en.wikipedia.org/wiki/The_Mysterious_Benedict_Society_(series)">The Mysterious Benedict Society</a></td>
 			<td>
 				<ul>
@@ -390,7 +489,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Neil Cic -->
-		<tr class="videogame youtube music album mashup website">
+		<tr class="videogame onePlayer oneToFiveMins animated funny shitposty youtube music album mashup website">
 			<td><a href="http://www.neilcic.com/">Neil Cicierega</a>'s stuff</td>
 			<td>
 				<ul>
@@ -403,7 +502,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- NCase -->
-		<tr class="videogame website">
+		<tr class="videogame onePlayer website blog">
 			<td><a href="https://ncase.me/">Nicky Case</a>'s stuff</td>
 			<td>
 				<ul>
@@ -413,7 +512,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Oneshot -->
-		<tr class="videogame music">
+		<tr class="videogame onePlayer realtime exploration puzzle music">
 			<td><a href="https://www.oneshot-game.com/">OneShot</a></td>
 			<td>
 				<ul>
@@ -424,7 +523,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Outer Wilds -->
-		<tr class="videogame music">
+		<tr class="videogame onePlayer realtime sixDOF exploration shipGame cameraGame puzzle music">
 			<td><a href="https://www.mobiusdigitalgames.com/outer-wilds.html">Outer Wilds</a></td>
 			<td>
 				<ul>
@@ -442,7 +541,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- OTGW -->
-		<tr class="series">
+		<tr class="fivetoTenMins adventure animated funny music">
 			<td><a href="https://en.wikipedia.org/wiki/Over_the_Garden_Wall">Over the Garden Wall</a></td>
 			<td>
 				<ul>
@@ -452,7 +551,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Passionflower -->
-		<tr class="music">
+		<tr class="music folky rocky">
 			<td>Passionflower (<a href="https://www.youtube.com/watch?v=nY7GnAq6Znw"><span style="color: #FF0000;">youtube</span></a>|<a href="https://open.spotify.com/album/0qnEGgQh1D4qz4hfwvKieW"><span style="color: #1DB954;">spotify</span></a>)</td>
 			<td>
 				<ul>
@@ -473,7 +572,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- PIXAR -->
-		<tr class="movie series">
+		<tr class="sixtySeconds oneToFiveMins fiveToTenMins tenToThirtyMins thirtyToSixtyMins sixtyToNinetyMins moreThanNinetyMins adventure animated funny">
 			<td><a href="https://www.pixar.com/">PIXAR movies</a></td>
 			<td>
 				<ul>
@@ -499,7 +598,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- SUSD -->
-		<tr class="boardgame youtube website">
+		<tr class="boardgame youtube website blog">
 			<td>Shut up and sit down</td>
 			<td>
 				<ul>
@@ -509,7 +608,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- treasure planet -->
-		<tr class="movie">
+		<tr class="moreThanNinetyMins adventure animated">
 			<td><a href="https://en.wikipedia.org/wiki/Treasure_Planet">Treasure Planet</a></td>
 			<td>
 				<ul>
@@ -540,7 +639,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- UNDERTALE -->
-		<tr class="videogame music">
+		<tr class="videogame realtime turnbased exploration puzzle music">
 			<td><a href="https://undertale.com/">UNDERTALE</a></td>
 			<td>
 				<ul>
@@ -551,7 +650,7 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 			</td>
 		</tr>
 		<!-- Vulfpeck -->
-		<tr class="music">
+		<tr class="music funky">
 			<td><a href="https://vulfpeck.com/">Vulfpeck</a>'s stuff</td>
 			<td>
 				<ul>
