@@ -8,7 +8,7 @@
 # 21st september, the date
 - name: 21stSeptember
   id  : 0921
-  date: "2021-09-21T00:00:00+08:00"
+  date: "2022-09-21T00:00:00+08:00"
 
 # echoes of the eye, dlc for outer wilds
 - name: EOtE
