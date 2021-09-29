@@ -10,10 +10,10 @@
   id  : 0921
   date: "2022-09-21T00:00:00+08:00"
 
-# echoes of the eye, dlc for outer wilds
-- name: EOtE
-  id  : eote
-  date: "2021-09-28T00:00:00Z"
+# inscryption, videogame by daniel mullins
+- name: inscryption
+  id  : inscryption
+  date: "2021-10-19T00:00:00Z"
 
 # Voyage, ABBA's upcoming album
 - name: Voyage
