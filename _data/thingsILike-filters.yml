@@ -19,7 +19,7 @@
 - name: realtime
 - name: simultaneousTurnbased
 - name: turnbased
-### niches/mechanics
+### niches/mechanics/features
 - name: sixDOF
 - name: exploration
 - name: storyGenerator
