@@ -9,8 +9,3 @@
 - name: 21stSeptember
   id  : 0921
   date: "2022-09-21T00:00:00+08:00"
-
-# Aiko's Choice, DLC for Shadow Tactics
-- name: AikosChoice
-  id  : aikosChoice
-  date: "2021-12-06"
