@@ -169,13 +169,27 @@ and if i were a user that's all i'd like out of the scripts my browser wants me 
 								<ul id="gameMechanicsToggled" style="display: none;">
 									<li>6DOF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="checkbox" onclick="filterTable()" id="sixDOF"></li>
 									<li>exploration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 									<input type="checkbox" onclick="filterTable()" id="exploration"></li>
+									<li>free pause&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 								<input type="checkbox" onclick="filterTable()" id="freePause"></li>
 									<li>games where we're in a ship&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 																													<input type="checkbox" onclick="filterTable()" id="shipGame"></li>
 									<li>games where we can look through cameras: 																																												<input type="checkbox" onclick="filterTable()" id="cameraGame"></li>
 									<li>games that give us our own little story: 																																												<input type="checkbox" onclick="filterTable()" id="storyGenerator"></li>
+									<li>local multiplayer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 																	<input type="checkbox" onclick="filterTable()" id="LocalMultiplayer"></li>
 									<li>puzzle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 			<input type="checkbox" onclick="filterTable()" id="puzzle"></li>
 									<li>party games&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 									<input type="checkbox" onclick="filterTable()" id="partyGame"></li>
+									<li>pixel art&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 							<input type="checkbox" onclick="filterTable()" id="pixelArt"></li>
+									<li>platformer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 								<input type="checkbox" onclick="filterTable()" id="platformer"></li>
+									<li>player perspective [<a href="javascript:void(0)" id="playerPerspectiveToggle" onclick="showhide('playerPerspectiveToggle', 'playerPerspectiveToggled', 'show', 'hide')">show</a>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+										<ul id="playerPerspectiveToggled" style="display: none;">
+											<li>first person :							<input type="checkbox" onclick="filterTable()" id="firstPerson"></li>
+											<li>isometric&nbsp;&nbsp;&nbsp;&nbsp;:		<input type="checkbox" onclick="filterTable()" id="isometric"></li>
+											<li>third person :							<input type="checkbox" onclick="filterTable()" id="thirdPerson"></li>
+											<li>top down&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:	<input type="checkbox" onclick="filterTable()" id="topDown"></li>
+										</ul>
+									</li>
+									<li>roguelike&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:							<input type="checkbox" onclick="filterTable()" id="roguelike"></li>
 									<li>sandbox survival&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 															<input type="checkbox" onclick="filterTable()" id="sandboxSurvival"></li>
 									<li>stealth/hidden movement&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 																								<input type="checkbox" onclick="filterTable()" id="stealth"></li>
+									<li>twin stick shooter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:																		<input type="checkbox" onclick="filterTable()" id="twinStickShooter"></li>
 									<li>variable player powers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 																							<input type="checkbox" onclick="filterTable()" id="variablePlayerPowers"></li>
 								</ul>
 							</li>
