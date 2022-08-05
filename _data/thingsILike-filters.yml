@@ -19,7 +19,7 @@
 - name: realtime
 - name: simultaneousTurnbased
 - name: turnbased
-### niches/mechanics/features
+## niches/mechanics/features/genres
 - name: sixDOF
 - name: exploration
 - name: storyGenerator
@@ -30,6 +30,17 @@
 - name: sandboxSurvival
 - name: stealth
 - name: variablePlayerPowers
+- name: localMultiplayer
+- name: freepause
+- name: platformer
+- name: pixelArt
+- name: roguelike
+- name: twinStickShooter
+### player perspective
+- name: firstPerson
+- name: thirdPerson
+- name: topDown
+- name: isometric
 
 ## watchable
 ### runtme
