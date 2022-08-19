@@ -1,7 +1,7 @@
 /* aite figured out how to work this mostly */
 
 * {
-	font-family: Consolas, "Courier New";
+	font-family: "Fira Code", "Fira Mono", Consolas, "Courier New";
 	margin-top: 0px;
 	margin-bottom: 0px;
 	line-height: 1.4;
