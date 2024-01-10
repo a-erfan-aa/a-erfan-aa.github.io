@@ -29,3 +29,4 @@ end
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 #Note to self: just dont include whatever gem that is. github doesnt seem to be breaking
+gem "webrick", "~> 1.8"
