@@ -1,11 +1,42 @@
 # description for humans to read
 # dates follow ISO Dates-Time, malaysia's timezone is UTC+08:00
-# - name: Example
-#   id: demo
-#   date: "YYYY-MM-DD" or date: "YYYY-MM-DDTHH:MM:SSZ" or date: "YYYY-MM-DDTHH:MM:SS+HH:MM" or date: "YYYY-MM-DDTHH:MM:SS-HH:MM"
-#   date: "2021-08-21" or date: "2021-08-21T12:00:00Z" or date: "2021-08-21T12:00:00+08:00"
+# - name      : Example (will be used in js generation)
+#   comment   : Example (will be used in html comment)
+#   h3content : >
+  # long long line for an example yayayaya (will be used in html <h3> tags)
+#   id        : demo (will be used to assign script to the right <p> tag)
+#   date      : "YYYY-MM-DD" or date: "YYYY-MM-DDTHH:MM:SSZ" or date: "YYYY-MM-DDTHH:MM:SS+HH:MM" or date: "YYYY-MM-DDTHH:MM:SS-HH:MM"
+#   date      : "2021-08-21" or date: "2021-08-21T12:00:00Z" or date: "2021-08-21T12:00:00+08:00"
+#   date      : ??? to leave countdown as unconfirmed/variable
+
+# webtoon updates
+- name      : Webtoons
+  comment   : webtoon updates
+  h3content : >
+    New pages for misc. stuff i'm reading over on <a href="https://www.webtoons.com/en/">Webtoons</a>
+  id        : webtoons
+  date      : ???
+
+# jacob collier in KL
+- name      : JCinKL
+  comment   : JC world tour asia circuit
+  h3content : >
+    <a href="https://www.jacobcollier.com/">Jacob Collier</a>'s <a href="https://www.jacobcollier.com/tour">Kuala Lumpur part of his asia tour</a>
+  id        : JCollierAsia
+  date      : ???
+
+# silksong
+- name      : Silksong
+  comment   : Silksong
+  h3content : >
+    <a href="https://www.hollowknightsilksong.com/">Hollow Knight: Silksong</a>, <a href="https://www.teamcherry.com.au/">Team Cherry</a>'s sequel to <a href="https://www.hollowknight.com/">Hollow Knight</a>
+  id        : Silksong
+  date      : ???
 
 # 21st september, the date
-- name: 21stSeptember
-  id  : 0921
-  date: "2024-09-21T00:00:00+08:00"
+- name     : 21stSeptember
+  comment  : 21st September
+  h3content: >
+    <a href="https://www.youtube.com/watch?v=Gs069dndIYk">21<sup>st</sup> September</a> (where i currently live)
+  id       : 0921
+  date     : "2024-09-21T00:00:00+08:00"

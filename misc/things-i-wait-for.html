@@ -11,36 +11,15 @@ lastChanged: 2022/05/21
 	<h4>Stuff that i look forward to y'know</h4>
 </div>
 
-<br><br>
+<br>
 
 <script src="/assets/js/countdowns.js"></script>
 
-<!-- webtoon updates -->
-<div>
-	<h3>New chapters to various comics over on <a href="https://www.webtoons.com/en/">Webtoons</a> come out...</h3>
-	<p>according to their respective (usually weekly) release schedules. I may or may not keep a list of what i'm reading in <a href="/things-i-like">things i like</a>.</p>
-</div>
-
+{% for item in site.data.countdowns %}
 <br>
 
-<!-- JC world tour asia circuit-->
+<!-- {{ item.comment }} -->
 <div>
-	<h3><a href="https://www.jacobcollier.com/">Jacob Collier</a> <a href="https://www.jacobcollier.com/tour">comes to Kuala Lumpur</a> in...</h3>
-	<p>an unconfirmed amount of time. Asia tour dates aren't out yet.</p>
-</div>
-
-<br>
-
-<!-- Silksong -->
-<div>
-	<h3><a href="https://www.hollowknightsilksong.com/">Hollow Knight: Silksong</a>, <a href="https://www.teamcherry.com.au/">Team Cherry</a>'s sequel to <a href="https://www.hollowknight.com/">Hollow Knight</a>, comes out in...</h3>
-	<p>an indefinite amount of time.</p>
-</div>
-
-<br>
-
-<!-- 21st september -->
-<div>
-	<h3><a href="https://www.youtube.com/watch?v=Gs069dndIYk">21<sup>st</sup> September</a> (where i currently live) arrives in...</h3>
-	<p id="0921">give the javascript a sec to kick in...</p>
-</div>
+	<h3>{{ item.h3content }} arrive(s) in...</h3>
+	<p id="{{ item.id }}">give the javascript a sec to kick in...</p>
+</div>{% endfor %}
