@@ -3,7 +3,7 @@ layout: default
 title: My website principles
 description: What this website stands for
 firstCreated: 2021/06/10
-lastChanged: 2022/07/27
+lastChanged: 2024/01/21
 ---
 <!-- title and subtitle-->
 <div>
@@ -56,37 +56,5 @@ lastChanged: 2022/07/27
 <!-- inspirations -->
 <div>
 	<h3>Inspirations</h3>
-		<ul>
-			<li><a href="http://stallman.org/">stallman.org</a></li>
-			<li><a href="https://billwurtz.com/">billwurtz.com</a></li>
-			<li><a href="https://vulfpeck.com/">vulfpeck.com</a></li>
-			<li><a href="http://yaml.org/">yaml.org</a></li>
-			<li><a href="http://www.oldsidelinghill.com/2021.html">oldsidelinghill.com</a></li>
-			<li><a href="https://ben.balter.com/">ben.balter.com</a></li>
-			<li><a href="https://www.robotsoup.com/">robotsoup.com</a></li>
-		</ul>
-</div>
-
-<br>
-
-<!-- changes i'd like but would be hard -->
-<div>
-	<h3>Changes i'd like that i think would be hard to implement</h3>
-		<ul>
-			<li>i should probably look into accessibility options like colorblind mode, day/night themes, large text and other common languages in my region but it's daunting
-				<ul>
-					<li>especially the language part, i can't just shove everything into a translation service because
-						<ul>
-							<li>i made all these pages (excluding some of the js) from scratch with notepad++ and jekyll. having to dance my plaintext and markup around the &lt;elements&gt; is going to be hell
-								<ul>
-									<li>I've switched to using vscode for editing this website somewhere mid august 2021, but i'm still very fond of notepad++ for regular .txt files</li>
-								</ul>
-							</li>
-							<li>i use a lot of abbreviations and nonsense words like awaaga</li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-			<li>really wanna figure out how to make the checkboxes not look like they're raised slightly over on <a href="/things-i-like.html">things that i like</a></li>
-		</ul>
+{% include inspirationalWebsites.html %}
 </div>
